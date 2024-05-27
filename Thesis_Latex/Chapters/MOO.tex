@@ -1,8 +1,8 @@
 \chapter{MOO Project}
 
 \section{What is MOO?}
-\acrfull{moo} and Simulation Driven Co - Design is an easy to use method developed for modular, automatized multi domain toolchains considering power loss, thermal calculations and 
-lifetime assessments. In short, \ac{moo} is an optimization problem where we have at least two objective functions to optimize simultaneously.
+\acrfull{moo} \cite{moo} and Simulation Driven Co - Design is an easy to use method developed for modular, automatized multi domain toolchains considering power loss, thermal calculations and 
+lifetime assessments. In short, \acrshort{moo} is an optimization problem where we have at least two objective functions to optimize simultaneously.
 
 This project is divided into many \textbf{action fields} wherein each action field focuses on tackling a defined problem. The table below explains more
 about each of the action fields.
@@ -12,51 +12,47 @@ about each of the action fields.
         \begin{table}[h!]
         \begin{tabular}{|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{12cm}|}
         \hline
-        \rowcolor{yellow!25} \Large{\textbf{Action Fields}} & \Large{\textbf{\multirow{2}{*}{\centering Objective / Purpose}}} \\
+        \rowcolor{yellow!25} \Large{\textbf{Action Fields}} & \Large{\textbf{\multirow{2}{*}{\centering Objective}}} \\
         \hline
         \centering
-		Co-design, virtual modeling and credible simulation & 
+		Co-design, virtual modelling and credible simulation & 
         \begin{itemize}
-            \item Simulation Driven Co-Design as the main method used for product development
-            \item Robust design based on costs, performance and reliability
+            \item Identification of costs and relevant parameters by sensitivity analysis
+            \item All relevant input parameters are determined with sufficient accuracy
+            \item Necessary tool chains are available and automated
+            \item Virtual models are validated
         \end{itemize}\\
         \hline
         Tools and Automation &
         \begin{itemize}
-			\item Speed up concept decisions in product 
-            development by providing automated simulation workflows
-            \item Optimization on system level (function, costs, robustness)
-            \item Roll out user-friendly workflows
-            \item Robust modeling standards to achieve reproducible results
-            \item Integration of available tools
+			\item Parameterized \acrshort{cad}, simplified models
+			\item All necessary models are verified and can be incorporated in the workflows and provide reliable results
+			\item Professional programmed code
+			\item Data exchange works automated
         \end{itemize}\\
 		\hline
         Realistic requirements and confidence of input data &
         \begin{itemize}
-            \item Definition of realistic requirements(black box) reduced to what is necessary for the \ac{moo}
-            \item Recording of all design-defining relevant use cases such as active driving, start-up, operation, braking etc
-            \item Unify customer requirements to standardize designs 
+            \item Reduce the requirements given by the equipment manufacturer to what is really needed
+            \item Show benefits to the customers
         \end{itemize}\\
         \hline
         Cross-domain collaboration and qualification - establishing in projects & 
         \begin{itemize}
-            \item Automatized, simulation-based, cost optimum product design in the of Cluster 3 Power Electronics
-            \item Optimal design decisions
+            \item Cross-domain collaboration on the base of modelling approaches is established
+            \item Competence management and qualification program is established
+            \item Simulation driven co-design is established in and requested by the projects
         \end{itemize}\\
         \hline
         \end{tabular}
-        \caption{Action fields and Objectives of \ac{moo}}
+        \caption{Action fields and Objectives of \acrshort{moo}}
         \label{action_field_table}
         \end{table}
 \end{center}
 
-
-
-\section{Modules and Workflows}
-
 \section{What is Optislang}
-Ansys Optislang is a framework for design exploration, \ac{cae} based sensitivity analysis and optimization in conjunction with any product development tool. It is a Process Integration and 
-Design Optimization tool or in short, a \acrshort{pido} tool. Process Integration means to automate and orchestrate manual simulation processes and to realize
+Ansys Optislang \cite{optislang} is a software platform which is used for design exploration, \acrshort{cae} based sensitivity analysis and optimization in conjunction with any product development tool. It is a Process Integration and 
+Design Optimization tool or in short, a \acrshort{pido} tool. Process Integration refers to automate and orchestrate manual simulation processes and to realize
 complex workflows. Design Optimization aims for better understanding of your design, optimizing the product, identify an improved design which has the desired
 qualities and resulting in a best design by reliability analysis and statistical analysis.  
 %Optislang \cite{optislang} is a software platform which is used for \acrshort{cae} based sensitivity analysis, multi-objective optimization, multidisciplinary optimization, evaluation of
@@ -65,3 +61,15 @@ qualities and resulting in a best design by reliability analysis and statistical
 
 Optislang uses several solvers to look into aspects like mechanical, technical, mathematical and any other problems. This is easier in Optislang as it provides
 integration to create toolchains of many external programs like ANSYS, MATLAB, Excel, Python, CATIA and many more.
+
+\section{Modules and Workflows}
+\subsection{Modules}
+For better functioning of \acrshort{moo}, modules are created by the system developers. The modules are defined either in MATLAB or Python. Each module is 
+focused on solving a particular problem/issue in the workflow.
+
+\begin{table}
+    \begin{tabular}{|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{12cm}|}
+        \hline
+        Name of  the 
+    \end{tabular}
+\end{table}
