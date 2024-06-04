@@ -13,7 +13,7 @@ cwd = os.getcwd()
 pv_calculator.file_path = Path(os.path.join(cwd, "MOO_M_PV_CALCULATOR\\02_Model\\main_Pv_Calculator.m"))
 
 params = example_system.parameter_manager
-params.import_from_csv('C:\\Users\\BIS4SI\\Desktop\\Pv_calculator_python\\optislang_input_parameters.csv', ',')
+params.import_from_csv('G:\My Drive\Bachelor_Thesis\Bachelor_Thesis_Sathvick\Pv_calculator_python\optislang_input_parameters.csv', ',')
 example_system.parameter_manager = params
 
 pv_calculator.add_parameter('nameLC', PyOSDesignEntry(''))

@@ -3,3 +3,4 @@ Name,Param_Type,Reference_value,Constant,Modifiable,Unit,Removeable,Operation,De
 "nameFET","Optimization","EnergyLossMap_2FETCV0306PMTX02_Rg9_8_Ug-1_15_V2",1,0,"",1,"","STRING","Nominal discrete","EnergyLossMap_2FETCV0306PMTX02_Rg9_8_Ug-1_15_V2;EnergyLossMap_3FETCV0306PMTX02_Rg64_47_Ug-27_15_V3","","","","",""
 "Tj","Optimization",175,1,0,"",1,"","REAL","Continuous","157.5:192.5","","","","",""
 "commutationtype","Optimization",1,1,0,"",1,"","INTEGER","Nominal discrete","1;2","","","","",""
+"flgTjFk","Optimization",0,1,0,"",1,"","BOOL","Ordinal discrete (by index)","","","","","",""
