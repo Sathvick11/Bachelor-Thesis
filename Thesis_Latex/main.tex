@@ -1,0 +1,41 @@
+\documentclass[11pt]{report}
+\input{packages.tex}
+
+\loadglsentries{Chapters/abbreviations.tex}
+
+%\rhead{\includegraphics[width=1cm]{Logo/Thws-logo_English.png}}
+
+
+%%FOR ADDING HEADER %%%
+%\pagestyle{fancy}
+%\renewcommand{\chaptermark}[1]{\markboth{#1}{#1}}
+%\fancyhead{}
+%\fancyhead[L]{\chaptername\ \thechapter\ --\ \leftmark}
+%\fancyhead[R]{\includegraphics[height=0.75cm]{Logo/bosch_logo.png}}
+%%\fancypagestyle{plain} %-->To show header on the starting of all Chapters
+%\pagestyle{plain}
+%\fancyfoot{}
+\begin{document}
+
+\pagenumbering{Roman}
+\input{Chapters/title_page.tex}
+%\input{Chapters/declaration.tex}
+\tableofcontents
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+\addcontentsline{toc}{chapter}{Abbreviations}
+\listoftables
+\addcontentsline{toc}{chapter}{List of Tables}
+{\Large\printnoidxglossary[type=\acronymtype, style=dotlist, title=Abbreviations, nonumberlist]} %nonumberlist prevents adding page number to the glossary.
+\cleardoublepage\pagenumbering{arabic}
+\begin{spacing}{1.17}
+
+\input{Chapters/introduction.tex}
+\input{Chapters/MOO.tex}
+\input{Chapters/application_of_my_thesis.tex}
+\input{Chapters/ci_framework.tex}
+\bibliographystyle{plain}
+\bibliography{Chapters/references.bib}
+\end{spacing}
+
+\end{document}

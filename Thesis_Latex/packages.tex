@@ -1,0 +1,35 @@
+\usepackage{geometry}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{xcolor, colortbl}
+\usepackage{makecell}
+\usepackage{tabularray}
+\usepackage[export]{adjustbox}
+\geometry{top = 50pt, bottom = 50pt, left = 1in, right = 1in }
+\usepackage{graphicx}
+%\usepackage[T1]{fontenc}
+%\usepackage{fourier}
+\usepackage{setspace}
+\usepackage[acronym,shortcuts]{glossaries}
+\makenoidxglossaries
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{soul} %Used for highlighting
+%\setlength{\headsep}{1.5cm}
+%\setlength\headheight{26pt} 
+\renewcommand{\headrulewidth}{0pt} %Removes line in the header
+\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{1.5}
+\titleformat{\chapter}[display]
+    {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{0pt}{40pt}
+
+%This is used to control splitting of words using hyphen in LaTeX
+\tolerance=9999
+\emergencystretch=10pt
+\hyphenpenalty=10000
+\exhyphenpenalty=100
