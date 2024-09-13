@@ -1,28 +1,77 @@
-\chapter{Application of my Thesis}
+\chapter{Practical Application of the Thesis}
 
 To overcome the problems discussed in section \ref{current problem}, this thesis proposes a solution to automate the process of testing standalone modules
 in Optislang. Since, the process is automated, the testing of modules needs to be done without the help of the \acrshort{gui}. To achieve this, a Python
 \cite{python} framework is created to test the modules in an according manner. To use the framework in an automated manner, a \acrshort{ci} pipeline is created using GitHub Actions. The pipeline 
 is triggered whenever a new commit is pushed to the repository. The pipeline runs the tests on the modules in a virtual machine and checks if the results are as expected. If the tests 
-fail, the pipeline notifies the developer about the failure. The developer can then look into the issue and resolve it.
+fail, the pipeline notifies the developer about the failure. The developer can then look into the issue and resolve it. 
+
+To achieve this, the following sections explains the concepts and usage of DevOps, \acrlong{ci} and code quality in the context of this thesis.
 
 \section{DevOps}
-Devops is the combination of a set of practices, tools which helps to automate and integrate the processes between software and organizations.
+To create, test and maintain software applications, it is essential to have a well-defined process. Software development methodologies are models that help
+to define the process, roles and responsibilities in the software development lifecycle. Some of the earlier software methodologies like waterfall model, agile
+models, the deployment of software to production can only be done after the development and testing of the software is completed \cite{10616918}. Therefore, to 
+overcome this problem, DevOps was introduced, aiming to enhance productivity and efficiency in software development.
 
-DevOps practices play a crucial role in the development of the automation process described in this thesis. By integrating \acrfull{ci} and \acrfull{cd} pipelines, we ensure that the testing of 
-modules is efficient and reliable. This helps us to improve productivity and reduce human error. The DevOps approach allows for seamless collaboration between development and operations teams, 
-ensuring that the testing framework and the modules it tests are consistently maintained and updated. This integration of DevOps practices not only enhances the quality of te software but also 
-accelerates the development lifecycle, enabling faster delivery of new updates and features.
+Devops is the combination of a set of practices, tools which helps to automate and integrate the processes between software and organizations. Here, developers
+and IT operations teams collaborate to build, test and release software, in order to deliver software faster and increase the quality of the software. This 
+collaborative working is explained in the DevOps lifecycle shown in figure \ref{devops_lifecycle}.  
+
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=0.7\textwidth]{Images/devops_loop.png}
+    \includegraphics[width=0.7\textwidth]{Images/devops_loop.pdf}
     \caption{DevOps lifecycle}
     \label{devops_lifecycle}
 \end{figure}
+DevOps lifecycle is a continuous process, where the developers and operations team work together to deliver the software faster and with high quality.
+The left part of the loop represents the development phase, where the developers are responsible for planning, coding, building and testing the software. The
+right part of the loop represents the operations phase, where the operations team is responsible for deploying, monitoring and maintaining the software. The
+
+DevOps practices play a crucial role in the development of the automation process described in this thesis. By integrating \acrfull{ci} and \acrfull{cd} pipelines, we ensure that the testing of 
+modules is efficient and reliable. This helps us to improve productivity and reduce human error. According to \cite{8257807}, DevOps is not only helping to bridge
+the gap between development and operations teams, but also helping to improve the quality of the software.
+ The DevOps approach allows for seamless collaboration between development and operations teams, 
+ensuring that the testing framework and the modules it tests are consistently maintained and updated. This integration of DevOps practices not only enhances the quality of the software but also 
+accelerates the development lifecycle, enabling faster delivery of new updates and features.\newline
 
 In summary, the application of DevOps in this thesis demonstrates how modern software engineering practices can be applied to automate and streamline the testing process, leading to more robust,
 efficient and reliable software solutions.
 
-\section{\acrfull{ci}}
+\section{\acrlong{ci}}
+    \acrfull{ci} is the practice of automating the integration of code changes from multiple contributors into a single software project. This practice allows
+    to frequently merge code changes into a central repository where builds and tests are ran later on. A \acrshort{ci} pipeline can be applied to automate 
+    and streamline the testing process, leading to more robust, efficient and reliable software solutions \cite{8421965}.
 
-\section{Code quality}
+    For the \acrshort{ci} pipeline to work, usually the code changes are stored in a version control system which can be collaborated by multiple developers.
+    Examples of such version control systems are Bitbucket, GitLab, GitHub. A crucial practice of \acrshort{ci} is to commit the code changes to the repository 
+    frequently \cite{6802994}. In this thesis, GitHub is used as the primary version control system. After the code changes are committed, the \acrshort{ci} 
+    pipeline is triggered automatically. 
+
+    A detailed implementation of the \acrshort{ci} pipeline is discussed in Chapter \ref{ci_pipeline}. 
+
+\section{Code Quality}
+
+Code quality is a critical aspect of software development that directly impacts the maintainability, reliability, and performance of the software. High-quality 
+code is easier to understand, test, and modify, which is essential for the long-term success of any software project \cite{6862882}. In the context of this thesis, ensuring 
+code quality is particularly important for several reasons:
+
+\begin{itemize}
+    \item \textbf{Maintainability}:\newline 
+    High-quality code is well-structured and well-documented, making it easier for developers to understand and maintain. This is crucial for the continuous 
+    integration and continuous deployment (\acrshort{ci}/\acrshort{cd}) pipelines, as it ensures that the codebase remains manageable and scalable over time.
+    \item \textbf{Reliability}:\newline 
+    Code quality directly affects the reliability of the software. Well-written code is less prone to bugs and errors, which reduces the likelihood of failures 
+    during the testing and deployment phases. This is particularly important in a DevOps environment, where the goal is to deliver reliable software quickly 
+    and efficiently.
+    \item \textbf{Efficiency}:\newline 
+    High-quality code is optimized for performance, which can lead to faster execution times and more efficient use of resources. This is important for the 
+    automation processes described in this thesis, as it ensures that the testing and deployment pipelines run smoothly and efficiently.
+    \item \textbf{Collaboration}:\newline In a collaborative environment, such as GitHub, high-quality code is essential for effective teamwork. Clear, 
+    well-documented code allows multiple contributors to work on the same project without confusion or conflicts, which is a key aspect of successful \acrshort{ci} 
+    practices.
+\end{itemize}
+
+In summary, maintaining high code quality is essential for the success of the automation processes and the overall framework described in this thesis. It 
+ensures that the software is maintainable, reliable, efficient, and conducive to collaboration, all of which are critical for achieving the goals of \acrlong{ci} 
+and \acrlong{cd}.

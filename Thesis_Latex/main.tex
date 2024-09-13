@@ -1,4 +1,4 @@
-\documentclass[11pt]{report}
+\documentclass[11pt]{report} %#Try to add it to 11pt or 12pt
 \input{packages.tex}
 
 \loadglsentries{Chapters/abbreviations.tex}
@@ -15,25 +15,29 @@
 %%\fancypagestyle{plain} %-->To show header on the starting of all Chapters
 %\pagestyle{plain}
 %\fancyfoot{}
+\pgfplotsset{compat=1.18}
 \begin{document}
 
 \pagenumbering{Roman}
 \input{Chapters/title_page.tex}
-%\input{Chapters/declaration.tex}
+\input{Chapters/declaration.tex}
 \tableofcontents
-\addcontentsline{toc}{chapter}{List of Figures}
 \listoffigures
+\addcontentsline{toc}{chapter}{List of Figures}
+\lstlistoflistings
+%\addcontentsline{toc}{chapter}{List of Tables}
 \addcontentsline{toc}{chapter}{Abbreviations}
-\listoftables
-\addcontentsline{toc}{chapter}{List of Tables}
 {\Large\printnoidxglossary[type=\acronymtype, style=dotlist, title=Abbreviations, nonumberlist]} %nonumberlist prevents adding page number to the glossary.
+\input{Chapters/abstract.tex}
+\addcontentsline{toc}{chapter}{Abstract}
 \cleardoublepage\pagenumbering{arabic}
 \begin{spacing}{1.17}
 
 \input{Chapters/introduction.tex}
 \input{Chapters/MOO.tex}
 \input{Chapters/application_of_my_thesis.tex}
-\input{Chapters/ci_framework.tex}
+\input{Chapters/creation_of_framework.tex}
+%\input{Chapters/ci_pipeline.tex}
 \bibliographystyle{plain}
 \bibliography{Chapters/references.bib}
 \end{spacing}

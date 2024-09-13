@@ -2,12 +2,41 @@
 
 \bibitem{optislang}
 Ansys optislang.
-\newblock \url{https://www.ansys.com/products/connect/ansys-optislang}.
 \newblock Online; Accessed 10/05/2024.
 
 \bibitem{python}
 Python.
-\newblock \url{https://www.python.org/}.
 \newblock Online; Accessed 07/08/2024.
+
+\bibitem{8421965}
+S.A.I.B.S. Arachchi and Indika Perera.
+\newblock Continuous integration and continuous delivery pipeline automation
+  for agile software project management.
+\newblock In {\em 2018 Moratuwa Engineering Research Conference (MERCon)},
+  pages 156--161, May 2018.
+
+\bibitem{6862882}
+Dimitrios Athanasiou, Ariadi Nugroho, Joost Visser, and Andy Zaidman.
+\newblock Test code quality and its relation to issue handling performance.
+\newblock {\em IEEE Transactions on Software Engineering}, 40(11):1100--1125,
+  Nov 2014.
+
+\bibitem{6802994}
+Mathias Meyer.
+\newblock Continuous integration and its tools.
+\newblock {\em IEEE Software}, 31(3):14--16, May 2014.
+
+\bibitem{10616918}
+E~Naresh, S~V~N Murthy, N.~Sreenivasa, Seshaiah Merikapudi, and C~R
+  Rakhi~Krishna.
+\newblock Continuous integration, testing deployment and delivery in devops.
+\newblock In {\em 2024 International Conference on Knowledge Engineering and
+  Communication Systems (ICKECS)}, volume~1, pages 1--4, April 2024.
+
+\bibitem{8257807}
+Pulasthi Perera, Roshali Silva, and Indika Perera.
+\newblock Improve software quality through practicing devops.
+\newblock In {\em 2017 Seventeenth International Conference on Advances in ICT
+  for Emerging Regions (ICTer)}, pages 1--6, Sep. 2017.
 
 \end{thebibliography}
