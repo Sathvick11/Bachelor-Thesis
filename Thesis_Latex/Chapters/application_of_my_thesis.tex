@@ -1,37 +1,79 @@
 \chapter{Practical Application of the Thesis}
 
 To overcome the problems discussed in section \ref{current problem}, this thesis proposes a solution to automate the process of testing standalone modules
-in Optislang. Since, the process is automated, the testing of modules needs to be done without the help of the \acrshort{gui}. To achieve this, a Python
-\cite{python} framework is created to test the modules in an according manner. To use the framework in an automated manner, a \acrshort{ci} pipeline is created using GitHub Actions. The pipeline 
+in Optislang. Since, the process is automated, the testing of modules needs to be done without the help of the \acrshort{gui}. To achieve this, a Python framework is created to test the modules in an according manner. To use the framework in an automated manner, a \acrshort{ci} pipeline is created using GitHub Actions. The pipeline 
 is triggered whenever a new commit is pushed to the repository. The pipeline runs the tests on the modules in a virtual machine and checks if the results are as expected. If the tests 
-fail, the pipeline notifies the developer about the failure. The developer can then look into the issue and resolve it. 
+fail, the pipeline notifies  developer about the failure. The developer can then look into the issue and resolve it. 
 
-To achieve this, the following sections explains the concepts and usage of DevOps, \acrlong{ci} and code quality in the context of this thesis.
+To achieve this, the following sections explains the concepts and practices like DevOps, \acrlong{ci}, Version Control and code quality in the context of this thesis.
 
 \section{DevOps}
-To create, test and maintain software applications, it is essential to have a well-defined process. Software development methodologies are models that help
-to define the process, roles and responsibilities in the software development lifecycle. Some of the earlier software methodologies like waterfall model, agile
-models, the deployment of software to production can only be done after the development and testing of the software is completed \cite{10616918}. Therefore, to 
-overcome this problem, DevOps was introduced, aiming to enhance productivity and efficiency in software development.
+\subsection{Introduction}
+Earlier, software development was divided into two separate phases: development and operations. The development team was responsible for writing the code and 
+building the software, while the operations team was responsible for deploying and maintaining the software. If the software failed in production, the operations 
+team would send the software back to the development team for fixing. This division of responsibilities often led to many issues
+\begin{itemize}
+    \item Developers needed to wait for the feedback from the operations team, which slowed down the development process.
+    \item Developers passed the software to the operations team without knowing how it would perform in production, which led to many issues.
+    \item Collaboration between the development and operations teams was limited, which made it difficult to resolve issues quickly and efficiently.
+\end{itemize}
 
-Devops is the combination of a set of practices, tools which helps to automate and integrate the processes between software and organizations. Here, developers
-and IT operations teams collaborate to build, test and release software, in order to deliver software faster and increase the quality of the software. This 
-collaborative working is explained in the DevOps lifecycle shown in figure \ref{devops_lifecycle}.  
+To overcome these challenges, DevOps was introduced. \textbf{DevOps} is a software development approach which encourages the collaboration between development(Dev) 
+and operations(Ops) team \cite{10616918}. From this collaboration, the software development lifecycle is faster, more efficient and more reliable. These teams 
+implement processes and tools to automate labour intensive, manual tasks which were slowing down the software development process. This also eliminates the 
+need to depend on the other team for feedback. 
 
-\begin{figure}[!h]
+
+\subsection{DevOps Lifecycle}
+DevOps lifecycle is a set of phases, which brings in the development and operations group together to manage the entire software development lifecycle.
+During each of the phases, different practices and tools are used to automate and streamline the software development process. Figure \ref{devops_lifecycle} shows 
+the DevOps lifecycle. The development phase is depicted on the left side of the loop, whereas the operations phase is depicted on the right side of the loop. 
+The loop represents the continuous nature of the DevOps lifecycle.
+\begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.7\textwidth]{Images/devops_loop.pdf}
-    \caption{DevOps lifecycle}
+    \includegraphics[width=0.7\textwidth]{Images/DevOps-Life-Cycle.pdf}
+    \caption{DevOps Lifecycle \cite{devops_lifecycle}}
     \label{devops_lifecycle}
 \end{figure}
-DevOps lifecycle is a continuous process, where the developers and operations team work together to deliver the software faster and with high quality.
-The left part of the loop represents the development phase, where the developers are responsible for planning, coding, building and testing the software. The
-right part of the loop represents the operations phase, where the operations team is responsible for deploying, monitoring and maintaining the software. The
+
+The DevOps lifecycle consists of the following phases:
+\begin{itemize}
+    \item \textbf{Plan}:\newline
+    The initial phase of any software development process is planning. During this stage, teams outline and prioritize the features to be developed. 
+    This involves defining requirements, setting objectives, and creating a project roadmap.
+
+    \item \textbf{Code}:\newline
+    After the requirements are defined, developers start implementing the code. Developers must adhere to the coding standards, versioning and collaborating
+    with other developers to ensure code quality.
+
+    \item \textbf{Build}:\newline
+    The build phase involves compiling the code and packaging the software. This phase ensures that the code is error-free and ready for deployment across 
+    different environments.
+
+    \item \textbf{Test}:\newline
+    The testing phase involves running various automated tests to ensure that the software meets the requirements and is free of bugs. This phase includes 
+    unit tests, integration tests, and system tests. This helps to identify and fix issues early in the development process.
+
+    \item \textbf{Release}:\newline
+    After the code has been tested and verified, it is released to the production environment. After verifying the code from bugs and errors, the code is 
+    passed on the next phase.
+
+    \item \textbf{Deploy}:\newline
+    The code is automatically deployed to the production environment. This phase involves setting up the infrastructure, configuring the servers, and 
+    deploying the software.
+
+    \item \textbf{Operate}:\newline
+    The operations team is responsible for verifying that the software is operating smoothly in the production environment.
+    
+    \item \textbf{Monitor}:\newline
+    To verify if the software is running smoothly, the operations team monitors the software. This phase involves collecting and analyzing data to identify
+    the health, performance, and security of the software. This data is used to identify and fix issues before they impact the end-users.
+\end{itemize}
 
 DevOps practices play a crucial role in the development of the automation process described in this thesis. By integrating \acrfull{ci} and \acrfull{cd} pipelines, we ensure that the testing of 
 modules is efficient and reliable. This helps us to improve productivity and reduce human error. According to \cite{8257807}, DevOps is not only helping to bridge
 the gap between development and operations teams, but also helping to improve the quality of the software.
- The DevOps approach allows for seamless collaboration between development and operations teams, 
+The DevOps approach allows for seamless collaboration between development and operations teams, 
 ensuring that the testing framework and the modules it tests are consistently maintained and updated. This integration of DevOps practices not only enhances the quality of the software but also 
 accelerates the development lifecycle, enabling faster delivery of new updates and features.\newline
 
@@ -50,8 +92,73 @@ efficient and reliable software solutions.
 
     A detailed implementation of the \acrshort{ci} pipeline is discussed in Chapter \ref{ci_pipeline}. 
 
-\section{Code Quality}
+\section{Version Control Strategies} \label{version_control}
+%# Intro
+To track changes in the codebase, version control is used. It acts as a safety net for the developers, allowing them to revert to the previous version of the 
+codebase if something goes wrong. Git, Mermaid and many other distributed version control systems provides the same functionality. In this thesis, 
+Git\footnote{\url{https://git-scm.com/URL}} is used as the primary version control system. This method of tracking is setup locally. To collaborate with other 
+developers, the codebase needs to be pushed to a remote repository. In our organization, GitHub is used as the main source for hosting the codebase. By hosting a remote+
+repository, developers can collaborate with each other, track changes, and manage the codebase effectively. Version control is considered to be an important
+practice in DevOps, as they reduce the development time of a product and increase the quality of the software by frequent deployment.
 
+While working on a feature, or a bug fix, developers tend to create a new branch in the repository, so that the main branch is not affected. There are two main 
+branching strategies : long-lived branches and short-lived branches. 
+\subsection{GitHub Flow}
+This branching strategy is a simplified version of the Git Flow. It is a lightweight, branch-based workflow that is designed around deploying code to production. 
+It uses the concepts of branches and pull requests, which is ideal for working in teams and frequent deployments.
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Images/github_flow.pdf}
+    \caption{Example of GitHub Flow}
+    \label{github_flow}
+\end{figure} 
+
+\begin{itemize}
+    \item \textbf{Master Branch}:\newline
+    The master/main branch is the default branch in the repository. This branch is always deployable and contains the latest stable version of the code.
+
+    \item \textbf{Feature Branch}:\newline
+    When a new feature is to be implemented, a new branch is created from the master branch. This is practiced to avoid conflicts with the code in the main branch. 
+    The developer works on the feature branch until the feature is completed. After the feature is completed, reviewed and tested, the branch is merged back to 
+    the main branch. In the figure \ref{github_flow}, \texttt{change1}, \texttt{change2} and \texttt{change3} are the feature branches.
+\end{itemize}
+
+GitHub Flow is simple to learn and implement and provides faster feedback to developers. 
+
+\subsection{Git Flow}
+Git Flow is a more complex branching model compared to GitHub Flow. It is a branching model that helps to manage the codebase in a more organized manner for
+managing large projects with scheduled releases. It uses two long lived branches, master and develop, along with several short-lived branches.
+%# Try to change the image here for the release branch
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Images/git_flow.pdf}
+    \caption{Example of Git Flow}
+    \label{git_flow}
+\end{figure}
+ \begin{itemize}
+    \item \textbf{Main Branch}:\newline
+    Main branch serves the same purpose as the master branch in GitHub Flow. It contains production ready code that can be released. Here, in figure \ref{git_flow},
+    the main branch commits are tagged with their respective version numbers.
+
+    \item \textbf{Develop Branch}:\newline
+    This branch is created at the start of a project and contains pre-production code. This branch is maintained throughout the project and is used to merge 
+    feature branches. The develop branch is merged to the release branch when the code is ready for release.
+
+    \item \textbf{Feature Branch}:\newline
+    This branch has the same responsibility as the feature branch in GitHub Flow. After the feature is implemented, the branch is merged with the develop branch.
+ 
+    \item \textbf{Release Branch}:\newline
+    This branch contains the code that is ready for release. It is created from the develop branch and is merged back to the main branch after the release.
+
+    \item \textbf{Hotfix Branch}:\newline
+    This branch is used to quickly address critical bugs in the production code. It is created from the master branch.
+\end{itemize}
+
+Git Flow is a more complex branching model compared to GitHub Flow. It is suitable for large projects with scheduled releases. It provides a more organized 
+approach to managing the codebase and ensures that the code is stable and reliable before it is released to production. Due to the creation of several branches, 
+developers can work parallel on different features without affecting the main branch.
+
+\section{Code Quality}
 Code quality is a critical aspect of software development that directly impacts the maintainability, reliability, and performance of the software. High-quality 
 code is easier to understand, test, and modify, which is essential for the long-term success of any software project \cite{6862882}. In the context of this thesis, ensuring 
 code quality is particularly important for several reasons:

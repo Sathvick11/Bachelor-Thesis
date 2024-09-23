@@ -114,6 +114,53 @@
       {[}{{{\color{delim}{[}}}}{1}
       {]}{{{\color{delim}{]}}}}{1},
 }
+
+\lstdefinelanguage{Dockerfile}
+{
+    keywords={FROM, RUN, COPY, ADD, ENTRYPOINT, CMD, ARG, WORKDIR, EXPOSE, LABEL, USER, VOLUME, STOPSIGNAL, ONBUILD, MAINTAINER, HEALTHCHECK},
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\bfseries \color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    morestring=[b]',
+    morestring=[b]",
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    %breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,
+    numbers=left,                    
+    numbersep=5pt,
+    numberstyle=\tiny\color{codegray},                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=4
+}
+
+\lstdefinelanguage{yaml}{
+    keywords={name, on, push, branches, jobs, runs-on, steps, uses, with, run},
+    backgroundcolor=\color{backcolour},
+    basicstyle=\ttfamily\footnotesize,
+    rulecolor=\color{black},
+    keywordstyle=\bfseries \color{magenta},
+    string=[s]{"}{"},
+    stringstyle=\color{codepurple},
+    comment=[l]{:},
+    %commentstyle=\color{codegreen},
+    morecomment=[l]{-},
+    captionpos=b,                    
+    keepspaces=true,
+    numbers=left,                    
+    numbersep=5pt,
+    numberstyle=\tiny\color{codegray},                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+ }
+
 %This is used to control splitting of words using hyphen in LaTeX
 \tolerance=9999
 \emergencystretch=10pt

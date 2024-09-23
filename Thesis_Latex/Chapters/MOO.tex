@@ -18,7 +18,7 @@ considering the input parameters and the objectives, we get many solutions as sh
     \caption{Example of \acrshort{moo}}
     \label{moo}
 \end{figure}
-In a \acrshort{moo} problem, there typically is no single best solution. Rather, the \textit{goal} is to identify a set of solutions that are optimal in terms 
+In an \acrshort{moo} problem, there typically is no single best solution. Rather, the \textit{goal} is to identify a set of solutions that are optimal in terms 
 of all objectives. In Figure \ref{moo}, the best solutions for the given objectives is indicated in orange known as pareto optimal solutions. A solution is said 
 to be pareto optimal if no other solution can improve on any of the objectives without worsening at least one of the other objectives.
 %The solutions which are not Pareto optimal are not considered as they are dominated by the Pareto optimal solutions. 
@@ -50,14 +50,12 @@ While \acrshort{soo} focuses on finding the best solution according to a single 
 often conflicting objectives. The choice between \acrshort{soo} and \acrshort{moo} depends on the nature of the problem at hand and the goals of the decision-maker. 
 Understanding the differences between these approaches is crucial for selecting the appropriate optimization technique and achieving the desired outcomes.
 
-%#! Explain where we are currently using the MOO approach in our department
-
 %%%%%%%%%%%%%%%   SECTION : OPTISLANG  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Optislang}
 \paragraph{}
 
 To calculate \acrshort{moo}, we need a software platform that can handle the complexity of the problem. Ansys Optislang \cite{optislang} is such a software 
-platform, which is used for design exploration, \acrshort{cae} based sensitivity analysis and optimization in conjunction with any product development tool. 
+platform, which is used for design exploration, \acrfull{cae} based sensitivity analysis and optimization in conjunction with any product development tool. 
 It is a Process Integration and Design Optimization tool or in short, a \acrshort{pido} tool. Process Integration refers to automate and orchestrate manual 
 simulation processes and to realize complex workflows. Design Optimization aims for better understanding of your design, optimizing the product, identify an 
 improved design which has the desired qualities and resulting in a best design by reliability analysis and statistical analysis.  
@@ -83,14 +81,13 @@ system developers, each module is versioned and stored in a specific manner in a
     \label{github_arrhenius}
 \end{figure}
 
-Figure \ref{github_arrhenius} shows us an example of how each module is maintained in our GitHub.
+Figure \ref{github_arrhenius} shows us an example of how each module is maintained in our GitHub organization.
 \begin{itemize}
     \item \verb|01_Specification| has all the requirements for the module to run.
     \item \verb|02_Model| contains all parts to run the model. This can also be used as a playground for the development of a model.
-    \item \verb|03_Test| withholds all relevant documents regarding unit tests or integration test can be found here. This is one of the important part 
-                        of the module.
+    \item \verb|03_Test| contains all the unit tests for the module. This is to ensure that the module is working as expected.
     \item \verb|04_Input| carries all the initial parameters or functions to be defined at the start of a module.
-    \item Documentation explaining functioning and usage of the module can be found under \verb|05_Documentation|.
+    \item \verb|05_Documentation|contains documents explaining functioning and usage of the module.
 \end{itemize}
 %\begin{table}[!h]
 %    \begin{tabular}{|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{12cm}|}

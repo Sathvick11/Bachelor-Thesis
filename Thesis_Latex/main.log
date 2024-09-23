@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.6)  13 SEP 2024 16:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.6)  23 SEP 2024 13:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1123,12 +1123,12 @@ Package pgfplots notification 'compat/show suggested version=true': document has
 \c@mv@boldtabular=\count426
 \c@lstlisting=\count427
 (Chapters/title_page.tex
-<Logo/bosch_logo.png, id=150, 602.25pt x 149.55875pt>
+<Logo/bosch_logo.png, id=218, 602.25pt x 149.55875pt>
 File: Logo/bosch_logo.png Graphic file (type png)
 <use Logo/bosch_logo.png>
 Package pdftex.def Info: Logo/bosch_logo.png  used on input line 3.
 (pdftex.def)             Requested size: 140.92793pt x 34.99568pt.
-<Logo/Thws-logo_English.png, id=152, 359.4228pt x 200.9106pt>
+<Logo/Thws-logo_English.png, id=220, 359.4228pt x 200.9106pt>
 File: Logo/Thws-logo_English.png Graphic file (type png)
 <use Logo/Thws-logo_English.png>
 Package pdftex.def Info: Logo/Thws-logo_English.png  used on input line 5.
@@ -1162,26 +1162,26 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has b
 <to be read again> 
                    \relax 
 l.24 \tableofcontents
-                      [1] (main.toc)
+                      [1] (main.toc [2
+
+])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [2
-
-] (main.lof
-LaTeX Font Info:    Trying to load font information for T1+FiraMono-TOsF on input line 12.
+ [3] (main.lof
+LaTeX Font Info:    Trying to load font information for T1+FiraMono-TOsF on input line 22.
  (C:\Users\BIS4SI\AppData\Local\Programs\MiKTeX\tex/latex/fira\t1firamono-tosf.fd
 File: T1FiraMono-TOsF.fd 2019/10/10 (autoinst) Font definitions for T1/FiraMono-TOsF.
 )
 LaTeX Font Info:    Font shape `T1/FiraMono-TOsF/m/n' in size <10.95> not available
-(Font)              Font shape `T1/FiraMono-TOsF/regular/n' tried instead on input line 12.
+(Font)              Font shape `T1/FiraMono-TOsF/regular/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `T1/FiraMono-TOsF/regular/n' will be
-(Font)              scaled to size 8.97906pt on input line 12.
+(Font)              scaled to size 8.97906pt on input line 22.
 )
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- [3
+ [4
 
 {C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fira/fir_d4q673.enc}] (main.lol)
 \tf@lol=\write8
@@ -1189,16 +1189,16 @@ LaTeX Font Info:    Font shape `T1/FiraMono-TOsF/regular/n' will be
 
 
 Using TeX to sort glossary entries---this may take a while
-[4
+[5
 
-] (Chapters/abstract.tex [5
+] (Chapters/abstract.tex [6
 
 
 ]
 pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.13 \end{abstract}
+l.19 \end{abstract}
                     [1]) (Chapters/introduction.tex
 Chapter 1.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 9.
@@ -1227,51 +1227,72 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 ] (../Python/plots/soo_plot.tex) [3{C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}]
 
 pdfTeX warning: pdflatex (file ./Images/github_folder_structure.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/github_folder_structure.pdf, id=284, 963.6pt x 542.025pt>
+<Images/github_folder_structure.pdf, id=385, 963.6pt x 542.025pt>
 File: Images/github_folder_structure.pdf Graphic file (type pdf)
 <use Images/github_folder_structure.pdf>
-Package pdftex.def Info: Images/github_folder_structure.pdf  used on input line 81.
+Package pdftex.def Info: Images/github_folder_structure.pdf  used on input line 79.
 (pdftex.def)             Requested size: 563.70459pt x 317.08748pt.
 
-Overfull \hbox (93.94957pt too wide) in paragraph at lines 81--82
+Overfull \hbox (93.94957pt too wide) in paragraph at lines 79--80
  [][] 
  []
 
 [4 <./Images/github_folder_structure.pdf>]
-<Images/workflow_example.png, id=301, 1142.01656pt x 216.05719pt>
+<Images/workflow_example.png, id=402, 1142.01656pt x 216.05719pt>
 File: Images/workflow_example.png Graphic file (type png)
 <use Images/workflow_example.png>
-Package pdftex.def Info: Images/workflow_example.png  used on input line 112.
+Package pdftex.def Info: Images/workflow_example.png  used on input line 109.
 (pdftex.def)             Requested size: 469.75502pt x 88.87082pt.
 ) (Chapters/application_of_my_thesis.tex [5 <./Images/workflow_example.png>]
 Chapter 3.
-<Images/devops_loop.pdf, id=311, 1882.03125pt x 641.39626pt>
-File: Images/devops_loop.pdf Graphic file (type pdf)
-<use Images/devops_loop.pdf>
-Package pdftex.def Info: Images/devops_loop.pdf  used on input line 23.
-(pdftex.def)             Requested size: 328.82707pt x 112.06007pt.
+<Images/DevOps-Life-Cycle.pdf, id=412, 801.74532pt x 481.8pt>
+File: Images/DevOps-Life-Cycle.pdf Graphic file (type pdf)
+<use Images/DevOps-Life-Cycle.pdf>
+Package pdftex.def Info: Images/DevOps-Life-Cycle.pdf  used on input line 34.
+(pdftex.def)             Requested size: 328.82707pt x 197.60544pt.
 [6
 
- <./Images/devops_loop.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 31--37
+] [7 <./Images/DevOps-Life-Cycle.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 73--79
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\acrlong' on input line 41.
+(hyperref)                removing `\acrlong' on input line 83.
 
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 99.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 99.
+LaTeX Font Info:    Font shape `T1/FiraMono-TOsF/m/n' in size <9> not available
+(Font)              Font shape `T1/FiraMono-TOsF/regular/n' tried instead on input line 99.
+LaTeX Font Info:    Font shape `T1/FiraMono-TOsF/regular/n' will be
+(Font)              scaled to size 7.38007pt on input line 99.
+[8]
 
-LaTeX Warning: Reference `ci_pipeline' on page 7 undefined on input line 51.
+pdfTeX warning: pdflatex (file ./Images/github_flow.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/github_flow.pdf, id=454, 418.3128pt x 244.69417pt>
+File: Images/github_flow.pdf Graphic file (type pdf)
+<use Images/github_flow.pdf>
+Package pdftex.def Info: Images/github_flow.pdf  used on input line 111.
+(pdftex.def)             Requested size: 328.82707pt x 192.36163pt.
+[9 <./Images/github_flow.pdf>]
 
-[7]) (Chapters/creation_of_framework.tex [8]
+pdfTeX warning: pdflatex (file ./Images/git_flow.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/git_flow.pdf, id=471, 555.33473pt x 321.0695pt>
+File: Images/git_flow.pdf Graphic file (type pdf)
+<use Images/git_flow.pdf>
+Package pdftex.def Info: Images/git_flow.pdf  used on input line 134.
+(pdftex.def)             Requested size: 422.77664pt x 244.43668pt.
+[10 <./Images/git_flow.pdf>]) (Chapters/creation_of_framework.tex [11]
 Chapter 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 32--34
 
  []
 
-[9
+[12
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 38--39
@@ -1283,104 +1304,83 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
-[10]
-<Logo/github-mark.pdf, id=346, 73.77562pt x 72.27pt>
+[13]
+<Logo/github-mark.pdf, id=510, 73.77562pt x 72.27pt>
 File: Logo/github-mark.pdf Graphic file (type pdf)
 <use Logo/github-mark.pdf>
 Package pdftex.def Info: Logo/github-mark.pdf  used on input line 74.
 (pdftex.def)             Requested size: 56.9055pt x 55.74509pt.
- [11 <./Logo/github-mark.pdf>] (C:\Users\BIS4SI\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+ [14 <./Logo/github-mark.pdf>] (C:\Users\BIS4SI\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/03/11 1.10a listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 117.
-LaTeX Font Info:    Font shape `T1/FiraMono-TOsF/m/n' in size <9> not available
-(Font)              Font shape `T1/FiraMono-TOsF/regular/n' tried instead on input line 117.
-LaTeX Font Info:    Font shape `T1/FiraMono-TOsF/regular/n' will be
-(Font)              scaled to size 7.38007pt on input line 117.
 LaTeX Font Info:    Font shape `T1/FiraMono-TOsF/b/n' in size <9> not available
 (Font)              Font shape `T1/FiraMono-TOsF/bold/n' tried instead on input line 118.
 LaTeX Font Info:    Font shape `T1/FiraMono-TOsF/bold/n' will be
 (Font)              scaled to size 7.38007pt on input line 118.
-
-
-LaTeX Warning: Reference `' on page 12 undefined on input line 148.
-
-[12]
+ [15]
 LaTeX Font Info:    Font shape `T1/FiraMono-TOsF/b/n' in size <10.95> not available
-(Font)              Font shape `T1/FiraMono-TOsF/bold/n' tried instead on input line 162.
+(Font)              Font shape `T1/FiraMono-TOsF/bold/n' tried instead on input line 158.
 LaTeX Font Info:    Font shape `T1/FiraMono-TOsF/bold/n' will be
-(Font)              scaled to size 8.97906pt on input line 162.
- [13]
+(Font)              scaled to size 8.97906pt on input line 158.
+ [16]
 File: Logo/github-mark.pdf Graphic file (type pdf)
 <use Logo/github-mark.pdf>
-Package pdftex.def Info: Logo/github-mark.pdf  used on input line 227.
+Package pdftex.def Info: Logo/github-mark.pdf  used on input line 223.
 (pdftex.def)             Requested size: 11.61746pt x 11.38092pt.
-<Logo/folder_icon.pdf, id=385, 75.28125pt x 75.28125pt>
+<Logo/folder_icon.pdf, id=548, 75.28125pt x 75.28125pt>
 File: Logo/folder_icon.pdf Graphic file (type pdf)
 <use Logo/folder_icon.pdf>
-Package pdftex.def Info: Logo/folder_icon.pdf  used on input line 227.
+Package pdftex.def Info: Logo/folder_icon.pdf  used on input line 223.
 (pdftex.def)             Requested size: 11.38014pt x 11.38092pt.
 File: Logo/folder_icon.pdf Graphic file (type pdf)
 <use Logo/folder_icon.pdf>
-Package pdftex.def Info: Logo/folder_icon.pdf  used on input line 227.
+Package pdftex.def Info: Logo/folder_icon.pdf  used on input line 223.
 (pdftex.def)             Requested size: 11.38014pt x 11.38092pt.
-<Logo/GitHub Actions.pdf, id=386, 96.36pt x 96.36pt>
+<Logo/GitHub Actions.pdf, id=549, 96.36pt x 96.36pt>
 File: Logo/GitHub Actions.pdf Graphic file (type pdf)
 <use Logo/GitHub Actions.pdf>
-Package pdftex.def Info: Logo/GitHub Actions.pdf  used on input line 227.
+Package pdftex.def Info: Logo/GitHub Actions.pdf  used on input line 223.
 (pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
-<Logo/python-logo-only.pdf, id=387, 83.68365pt x 101.37984pt>
+<Logo/python-logo-only.pdf, id=550, 83.68365pt x 101.37984pt>
 File: Logo/python-logo-only.pdf Graphic file (type pdf)
 <use Logo/python-logo-only.pdf>
-Package pdftex.def Info: Logo/python-logo-only.pdf  used on input line 227.
+Package pdftex.def Info: Logo/python-logo-only.pdf  used on input line 223.
 (pdftex.def)             Requested size: 11.74243pt x 14.22636pt.
 File: Logo/python-logo-only.pdf Graphic file (type pdf)
 <use Logo/python-logo-only.pdf>
-Package pdftex.def Info: Logo/python-logo-only.pdf  used on input line 227.
+Package pdftex.def Info: Logo/python-logo-only.pdf  used on input line 223.
 (pdftex.def)             Requested size: 11.74243pt x 14.22636pt.
 File: Logo/python-logo-only.pdf Graphic file (type pdf)
 <use Logo/python-logo-only.pdf>
-Package pdftex.def Info: Logo/python-logo-only.pdf  used on input line 227.
+Package pdftex.def Info: Logo/python-logo-only.pdf  used on input line 223.
 (pdftex.def)             Requested size: 11.74243pt x 14.22636pt.
 File: Logo/python-logo-only.pdf Graphic file (type pdf)
 <use Logo/python-logo-only.pdf>
-Package pdftex.def Info: Logo/python-logo-only.pdf  used on input line 227.
+Package pdftex.def Info: Logo/python-logo-only.pdf  used on input line 223.
 (pdftex.def)             Requested size: 11.74243pt x 14.22636pt.
 File: Logo/python-logo-only.pdf Graphic file (type pdf)
 <use Logo/python-logo-only.pdf>
-Package pdftex.def Info: Logo/python-logo-only.pdf  used on input line 227.
+Package pdftex.def Info: Logo/python-logo-only.pdf  used on input line 223.
 (pdftex.def)             Requested size: 11.74243pt x 14.22636pt.
 File: Logo/python-logo-only.pdf Graphic file (type pdf)
 <use Logo/python-logo-only.pdf>
-Package pdftex.def Info: Logo/python-logo-only.pdf  used on input line 227.
+Package pdftex.def Info: Logo/python-logo-only.pdf  used on input line 223.
 (pdftex.def)             Requested size: 11.74243pt x 14.22636pt.
 File: Logo/python-logo-only.pdf Graphic file (type pdf)
 <use Logo/python-logo-only.pdf>
-Package pdftex.def Info: Logo/python-logo-only.pdf  used on input line 227.
+Package pdftex.def Info: Logo/python-logo-only.pdf  used on input line 223.
 (pdftex.def)             Requested size: 11.74243pt x 14.22636pt.
 File: Logo/python-logo-only.pdf Graphic file (type pdf)
 <use Logo/python-logo-only.pdf>
-Package pdftex.def Info: Logo/python-logo-only.pdf  used on input line 227.
+Package pdftex.def Info: Logo/python-logo-only.pdf  used on input line 223.
 (pdftex.def)             Requested size: 11.74243pt x 14.22636pt.
-<Logo/txt-svgrepo-com.pdf, id=388, 602.25pt x 602.25pt>
+<Logo/txt-svgrepo-com.pdf, id=551, 602.25pt x 602.25pt>
 File: Logo/txt-svgrepo-com.pdf Graphic file (type pdf)
 <use Logo/txt-svgrepo-com.pdf>
-Package pdftex.def Info: Logo/txt-svgrepo-com.pdf  used on input line 227.
+Package pdftex.def Info: Logo/txt-svgrepo-com.pdf  used on input line 223.
 (pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
-
-Underfull \hbox (badness 3068) in paragraph at lines 242--244
-[]\T1/lmr/m/n/10.95 Here, we have used this file to im-port the class \T1/FiraMono-TOsF/regular/n/10.95 ParametricSystem \T1/lmr/m/n/10.95 from the file
- []
-
-
-
-pdfTeX warning: pdflatex (file ./Images/utils.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/utils.pdf, id=390, 383.92433pt x 231.0231pt>
-File: Images/utils.pdf Graphic file (type pdf)
-<use Images/utils.pdf>
-Package pdftex.def Info: Images/utils.pdf  used on input line 256.
-(pdftex.def)             Requested size: 281.85587pt x 169.61133pt.
-[14 <./Logo/folder_icon.pdf> <./Logo/GitHub Actions.pdf
+ [17 <./Logo/folder_icon.pdf> <./Logo/GitHub Actions.pdf
 
 pdfTeX warning: pdflatex (file ./Logo/GitHub Actions.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./Logo/python-logo-only.pdf
@@ -1389,70 +1389,243 @@ pdfTeX warning: pdflatex (file ./Logo/python-logo-only.pdf): PDF inclusion: mult
 > <./Logo/txt-svgrepo-com.pdf
 
 pdfTeX warning: pdflatex (file ./Logo/txt-svgrepo-com.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-<Images/parametric_system_pv_calc.png, id=415, 739.26187pt x 510.40688pt>
-File: Images/parametric_system_pv_calc.png Graphic file (type png)
-<use Images/parametric_system_pv_calc.png>
-Package pdftex.def Info: Images/parametric_system_pv_calc.png  used on input line 289.
-(pdftex.def)             Requested size: 187.89914pt x 129.72757pt.
- [15 <./Images/utils.pdf>] [16 <./Images/parametric_system_pv_calc.png>]
-<Images/parametric_system_with_copy_actor.png, id=465, 938.00438pt x 515.67656pt>
+>] [18]
+<Images/docker.pdf, id=605, 602.25pt x 602.25pt>
+File: Images/docker.pdf Graphic file (type pdf)
+<use Images/docker.pdf>
+Package pdftex.def Info: Images/docker.pdf  used on input line 331.
+(pdftex.def)             Requested size: 56.9055pt x 56.90189pt.
+<Images/docker_image.pdf, id=606, 602.25pt x 602.25pt>
+File: Images/docker_image.pdf Graphic file (type pdf)
+<use Images/docker_image.pdf>
+Package pdftex.def Info: Images/docker_image.pdf  used on input line 332.
+(pdftex.def)             Requested size: 56.9055pt x 56.90189pt.
+<Images/container.pdf, id=607, 602.25pt x 602.25pt>
+File: Images/container.pdf Graphic file (type pdf)
+<use Images/container.pdf>
+Package pdftex.def Info: Images/container.pdf  used on input line 333.
+(pdftex.def)             Requested size: 56.9055pt x 56.90189pt.
+ [19]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\acrshort' on input line 355.
+
+<Images/computer-coding.pdf, id=627, 602.25pt x 602.25pt>
+File: Images/computer-coding.pdf Graphic file (type pdf)
+<use Images/computer-coding.pdf>
+Package pdftex.def Info: Images/computer-coding.pdf  used on input line 367.
+(pdftex.def)             Requested size: 71.13188pt x 71.12737pt.
+
+Overfull \hbox (14.22638pt too wide) in paragraph at lines 367--367
+ [][][]  
+ []
+
+<Images/api.pdf, id=628, 602.25pt x 602.25pt>
+File: Images/api.pdf Graphic file (type pdf)
+<use Images/api.pdf>
+Package pdftex.def Info: Images/api.pdf  used on input line 368.
+(pdftex.def)             Requested size: 71.13188pt x 71.12737pt.
+
+Overfull \hbox (14.22638pt too wide) in paragraph at lines 368--368
+ [][][]  
+ []
+
+<Images/database.pdf, id=629, 24.09pt x 24.09pt>
+File: Images/database.pdf Graphic file (type pdf)
+<use Images/database.pdf>
+Package pdftex.def Info: Images/database.pdf  used on input line 369.
+(pdftex.def)             Requested size: 71.13188pt x 71.14348pt.
+
+Overfull \hbox (14.22638pt too wide) in paragraph at lines 369--369
+ [][][]  
+ []
+
+
+Overfull \hbox (13.94179pt too wide) in paragraph at lines 387--388
+ [][] 
+ []
+
+[20 <./Images/docker.pdf> <./Images/docker_image.pdf
+
+pdfTeX warning: pdflatex (file ./Images/docker_image.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./Images/container.pdf
+
+pdfTeX warning: pdflatex (file ./Images/container.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./Images/computer-coding.pdf
+
+pdfTeX warning: pdflatex (file ./Images/computer-coding.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./Images/api.pdf
+
+pdfTeX warning: pdflatex (file ./Images/api.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./Images/database.pdf
+
+pdfTeX warning: pdflatex (file ./Images/database.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [21]
+File: Logo/folder_icon.pdf Graphic file (type pdf)
+<use Logo/folder_icon.pdf>
+Package pdftex.def Info: Logo/folder_icon.pdf  used on input line 462.
+(pdftex.def)             Requested size: 11.38014pt x 11.38092pt.
+File: Logo/folder_icon.pdf Graphic file (type pdf)
+<use Logo/folder_icon.pdf>
+Package pdftex.def Info: Logo/folder_icon.pdf  used on input line 462.
+(pdftex.def)             Requested size: 11.38014pt x 11.38092pt.
+File: Logo/folder_icon.pdf Graphic file (type pdf)
+<use Logo/folder_icon.pdf>
+Package pdftex.def Info: Logo/folder_icon.pdf  used on input line 462.
+(pdftex.def)             Requested size: 11.38014pt x 11.38092pt.
+File: Logo/python-logo-only.pdf Graphic file (type pdf)
+<use Logo/python-logo-only.pdf>
+Package pdftex.def Info: Logo/python-logo-only.pdf  used on input line 462.
+(pdftex.def)             Requested size: 11.74243pt x 14.22636pt.
+File: Logo/python-logo-only.pdf Graphic file (type pdf)
+<use Logo/python-logo-only.pdf>
+Package pdftex.def Info: Logo/python-logo-only.pdf  used on input line 462.
+(pdftex.def)             Requested size: 11.74243pt x 14.22636pt.
+File: Logo/python-logo-only.pdf Graphic file (type pdf)
+<use Logo/python-logo-only.pdf>
+Package pdftex.def Info: Logo/python-logo-only.pdf  used on input line 462.
+(pdftex.def)             Requested size: 11.74243pt x 14.22636pt.
+File: Logo/python-logo-only.pdf Graphic file (type pdf)
+<use Logo/python-logo-only.pdf>
+Package pdftex.def Info: Logo/python-logo-only.pdf  used on input line 462.
+(pdftex.def)             Requested size: 11.74243pt x 14.22636pt.
+File: Logo/folder_icon.pdf Graphic file (type pdf)
+<use Logo/folder_icon.pdf>
+Package pdftex.def Info: Logo/folder_icon.pdf  used on input line 462.
+(pdftex.def)             Requested size: 11.38014pt x 11.38092pt.
+File: Logo/folder_icon.pdf Graphic file (type pdf)
+<use Logo/folder_icon.pdf>
+Package pdftex.def Info: Logo/folder_icon.pdf  used on input line 462.
+(pdftex.def)             Requested size: 11.38014pt x 11.38092pt.
+File: Logo/folder_icon.pdf Graphic file (type pdf)
+<use Logo/folder_icon.pdf>
+Package pdftex.def Info: Logo/folder_icon.pdf  used on input line 462.
+(pdftex.def)             Requested size: 11.38014pt x 11.38092pt.
+File: Logo/folder_icon.pdf Graphic file (type pdf)
+<use Logo/folder_icon.pdf>
+Package pdftex.def Info: Logo/folder_icon.pdf  used on input line 462.
+(pdftex.def)             Requested size: 11.38014pt x 11.38092pt.
+File: Logo/folder_icon.pdf Graphic file (type pdf)
+<use Logo/folder_icon.pdf>
+Package pdftex.def Info: Logo/folder_icon.pdf  used on input line 462.
+(pdftex.def)             Requested size: 11.38014pt x 11.38092pt.
+File: Logo/folder_icon.pdf Graphic file (type pdf)
+<use Logo/folder_icon.pdf>
+Package pdftex.def Info: Logo/folder_icon.pdf  used on input line 462.
+(pdftex.def)             Requested size: 11.38014pt x 11.38092pt.
+File: Logo/python-logo-only.pdf Graphic file (type pdf)
+<use Logo/python-logo-only.pdf>
+Package pdftex.def Info: Logo/python-logo-only.pdf  used on input line 462.
+(pdftex.def)             Requested size: 11.74243pt x 14.22636pt.
+File: Logo/txt-svgrepo-com.pdf Graphic file (type pdf)
+<use Logo/txt-svgrepo-com.pdf>
+Package pdftex.def Info: Logo/txt-svgrepo-com.pdf  used on input line 462.
+(pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
+File: Images/docker.pdf Graphic file (type pdf)
+<use Images/docker.pdf>
+Package pdftex.def Info: Images/docker.pdf  used on input line 462.
+(pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
+<Logo/settings-svgrepo-com.pdf, id=646, 602.25pt x 602.25pt>
+File: Logo/settings-svgrepo-com.pdf Graphic file (type pdf)
+<use Logo/settings-svgrepo-com.pdf>
+Package pdftex.def Info: Logo/settings-svgrepo-com.pdf  used on input line 462.
+(pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
+ [22 <./Logo/settings-svgrepo-com.pdf>]) (Chapters/ci_pipeline.tex [23]
+Chapter 5.
+[24
+
+]
+<Images/thesis_branching_strategy.png, id=687, 1359.57938pt x 686.565pt>
+File: Images/thesis_branching_strategy.png Graphic file (type png)
+<use Images/thesis_branching_strategy.png>
+Package pdftex.def Info: Images/thesis_branching_strategy.png  used on input line 21.
+(pdftex.def)             Requested size: 422.77664pt x 213.49294pt.
+<Images/github_actions_flowchart.pdf, id=691, 633.32607pt x 162.6075pt>
+File: Images/github_actions_flowchart.pdf Graphic file (type pdf)
+<use Images/github_actions_flowchart.pdf>
+Package pdftex.def Info: Images/github_actions_flowchart.pdf  used on input line 39.
+(pdftex.def)             Requested size: 469.75502pt x 120.61052pt.
+ [25 <./Images/thesis_branching_strategy.png> <./Images/github_actions_flowchart.pdf>]
+LaTeX Font Info:    Font shape `T1/FiraMono-TOsF/m/it' in size <9> not available
+(Font)              Font shape `T1/FiraMono-TOsF/regular/it' tried instead on input line 56.
+LaTeX Font Info:    Font shape `T1/FiraMono-TOsF/regular/it' in size <9> not available
+(Font)              Font shape `T1/FiraMono-TOsF/regular/sl' tried instead on input line 56.
+LaTeX Font Info:    Font shape `T1/FiraMono-TOsF/regular/sl' will be
+(Font)              scaled to size 7.38007pt on input line 56.
+ [26]) (Chapters/summary.tex [27]
+Chapter 6.
+) (Chapters/appendix.tex [28
+
+]
+Appendix A.
+
+
+pdfTeX warning: pdflatex (file ./Images/utils.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/utils.pdf, id=752, 383.92433pt x 231.0231pt>
+File: Images/utils.pdf Graphic file (type pdf)
+<use Images/utils.pdf>
+Package pdftex.def Info: Images/utils.pdf  used on input line 15.
+(pdftex.def)             Requested size: 281.85587pt x 169.61133pt.
+<Images/parametric_system_with_copy_actor.png, id=754, 938.00438pt x 515.67656pt>
 File: Images/parametric_system_with_copy_actor.png Graphic file (type png)
 <use Images/parametric_system_with_copy_actor.png>
-Package pdftex.def Info: Images/parametric_system_with_copy_actor.png  used on input line 342.
+Package pdftex.def Info: Images/parametric_system_with_copy_actor.png  used on input line 33.
 (pdftex.def)             Requested size: 234.8775pt x 129.1234pt.
+[29
 
+ <./Images/utils.pdf>]
 
 pdfTeX warning: pdflatex (file ./Images/parametric_system_class.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/parametric_system_class.pdf, id=466, 550.13531pt x 246.40054pt>
+<Images/parametric_system_class.pdf, id=775, 550.13531pt x 246.40054pt>
 File: Images/parametric_system_class.pdf Graphic file (type pdf)
 <use Images/parametric_system_class.pdf>
-Package pdftex.def Info: Images/parametric_system_class.pdf  used on input line 370.
+Package pdftex.def Info: Images/parametric_system_class.pdf  used on input line 59.
 (pdftex.def)             Requested size: 422.77664pt x 189.36053pt.
-[17 <./Images/parametric_system_with_copy_actor.png>]
-Underfull \hbox (badness 2608) in paragraph at lines 386--389
-\T1/lmr/m/n/10.95 This func-tions acts sim-i-lar to \T1/FiraMono-TOsF/regular/n/10.95 get_module_config_path() \T1/lmr/m/n/10.95 but re-turns the path of
+[30 <./Images/parametric_system_with_copy_actor.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 73--76
+[]\T1/FiraMono-TOsF/bold/n/10.95 get_module_config_path()\T1/lmr/m/n/10.95 : This func-tion re-trieves the ab-so-lute path of the
  []
 
 
-Underfull \hbox (badness 1946) in paragraph at lines 395--399
-\T1/lmr/m/n/10.95 from the data pro-vided in \T1/FiraMono-TOsF/regular/n/10.95 parameters.json\T1/lmr/m/n/10.95 . Later, the data is be-ing saved as
+Underfull \hbox (badness 1281) in paragraph at lines 85--88
+[]\T1/FiraMono-TOsF/bold/n/10.95 generate_optislang_parameters_from_json()\T1/lmr/m/n/10.95 : This func-tion gen-er-ates the pa-ram-e-ters
  []
 
-[18 <./Images/parametric_system_class.pdf>]
+
 
 pdfTeX warning: pdflatex (file ./Images/verify_output_file.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/verify_output_file.pdf, id=509, 511.52103pt x 486.39716pt>
+<Images/verify_output_file.pdf, id=781, 511.52103pt x 486.39716pt>
 File: Images/verify_output_file.pdf Graphic file (type pdf)
 <use Images/verify_output_file.pdf>
-Package pdftex.def Info: Images/verify_output_file.pdf  used on input line 412.
+Package pdftex.def Info: Images/verify_output_file.pdf  used on input line 98.
 (pdftex.def)             Requested size: 375.80544pt x 357.3603pt.
-[19 <./Images/verify_output_file.pdf>] [20] [21]) (main.bbl [22]) [23
+[31 <./Images/parametric_system_class.pdf>]) (main.bbl [32 <./Images/verify_output_file.pdf>]
+Underfull \hbox (badness 1281) in paragraph at lines 4--7
+[]\T1/lmr/m/n/10.95 Ansys op-tis-lang.  []$\T1/FiraMono-TOsF/regular/n/10.95 https : / / www . ansys . com / products / connect / ansys-[]optislang$[]\T1/lmr/m/n/10.95 .  On-line;
+ []
+
+) [33
 
 ] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B75814018D0DA4D719C1BA947E8CCF98;4868.
+(rerunfilecheck)             Checksum: D102D859321F95CA620F01285E61EBA6;7273.
  ) 
 Here is how much of TeX's memory you used:
- 54126 strings out of 474369
- 1278608 string characters out of 5740043
- 1974754 words of memory out of 5000000
- 75500 multiletter control sequences out of 15000+600000
- 613559 words of font info for 71 fonts, out of 8000000 for 9000
+ 54695 strings out of 474369
+ 1290029 string characters out of 5740043
+ 1969754 words of memory out of 5000000
+ 76012 multiletter control sequences out of 15000+600000
+ 621483 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 141i,19n,141p,2432b,2823s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraMono-Bold.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraMono-Regular.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb>
-Output written on main.pdf (30 pages, 715649 bytes).
+ 141i,19n,141p,2432b,3019s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraMono-Bold.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraMono-Oblique.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraMono-Regular.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb>
+Output written on main.pdf (41 pages, 883105 bytes).
 PDF statistics:
- 669 PDF objects out of 1000 (max. 8388607)
- 190 named destinations out of 1000 (max. 500000)
- 376 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 924 PDF objects out of 1000 (max. 8388607)
+ 231 named destinations out of 1000 (max. 500000)
+ 562 words of extra memory for PDF output out of 10000 (max. 10000000)
 

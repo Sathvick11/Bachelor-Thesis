@@ -1,12 +1,19 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{optislang}
 Ansys optislang.
-\newblock Online; Accessed 10/05/2024.
+\newblock \url{https://www.ansys.com/products/connect/ansys-optislang}.
+\newblock Online; Accessed on 10/05/2024.
 
-\bibitem{python}
-Python.
-\newblock Online; Accessed 07/08/2024.
+\bibitem{devops_lifecycle}
+Devops - the complete guide for 2023.
+\newblock \url{https://www.openxcell.com/devops}.
+\newblock Online; Accessed on 15/08/2024.
+
+\bibitem{framework}
+What is a framework?
+\newblock \url{https://www.geeksforgeeks.org/what-is-a-framework/}.
+\newblock Online; Accessed on 13/09/2024.
 
 \bibitem{8421965}
 S.A.I.B.S. Arachchi and Indika Perera.
@@ -21,6 +28,13 @@ Dimitrios Athanasiou, Ariadi Nugroho, Joost Visser, and Andy Zaidman.
 \newblock {\em IEEE Transactions on Software Engineering}, 40(11):1100--1125,
   Nov 2014.
 
+\bibitem{9463074}
+Timothy Kinsman, Mairieli Wessel, Marco~A. Gerosa, and Christoph Treude.
+\newblock How do software developers use github actions to automate their
+  workflows?
+\newblock In {\em 2021 IEEE/ACM 18th International Conference on Mining
+  Software Repositories (MSR)}, pages 420--431, May 2021.
+
 \bibitem{6802994}
 Mathias Meyer.
 \newblock Continuous integration and its tools.
@@ -32,6 +46,13 @@ E~Naresh, S~V~N Murthy, N.~Sreenivasa, Seshaiah Merikapudi, and C~R
 \newblock Continuous integration, testing deployment and delivery in devops.
 \newblock In {\em 2024 International Conference on Knowledge Engineering and
   Communication Systems (ICKECS)}, volume~1, pages 1--4, April 2024.
+
+\bibitem{10434454}
+S.~Nithin, Hamsalekha S~J, and Parvathy S.
+\newblock Enhancing the automotive software test environment using continuous
+  integration and validation pipeline.
+\newblock In {\em 2023 Innovations in Power and Advanced Computing Technologies
+  (i-PACT)}, pages 1--6, Dec 2023.
 
 \bibitem{8257807}
 Pulasthi Perera, Roshali Silva, and Indika Perera.
