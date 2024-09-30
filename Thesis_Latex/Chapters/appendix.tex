@@ -1,6 +1,6 @@
 \appendix
 \chapter{Appendix}
-\section{Implementation of the Framework}
+\section{Implementation of the Framework} \label{implementation_framework}
 %!+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 In this section, we will briefly discuss the working and functioning of each of the files present in the framework. Each of the files are crucial and responsible
 for the proper functioning and execution of the framework. 
@@ -28,23 +28,22 @@ Since the main objective of the framework is to automate the process of running 
 system automatically. The script \texttt{create\_parametric\_system.py} assists in creating the parametric system without the help of Optislang's GUI. The 
 parametric system is created based on the information present in \texttt{module\_config.json}. The \acrshort{json} file consists of key-value pairs containing 
 crucial information for creating the system, like name of the main script containing the algorithm, type of module to build, i.e, Python or MATLAB. 
-\begin{figure}[!ht]
-  \centering
-  \includegraphics[width=0.5\textwidth]{Images/parametric_system_with_copy_actor.png}
-  \caption{Example of a parametric system with copy actor}
-  \label{parametric_system_with_copy_actor}
-\end{figure}
+%\begin{figure}[!ht]
+%  \centering
+%  \includegraphics[width=0.5\textwidth]{Images/parametric_system_with_copy_actor.png}
+%  \caption{Example of a parametric system with copy actor}
+%  \label{parametric_system_with_copy_actor}
+%\end{figure}
 
 Optislang takes in different functions to create a system depending on the type of actor. Therefore, type of module is required. Since the framework is automated,
 the process of inputting the requried files also needs to be automated. The script \texttt{input\_files.py} is responsible for retrieving the input files from 
-OpenShift. A detailed explanation of retrieving input files from OpenShift is provided in Section %! Add the reference to the section where the explanation is provided
-After providing the input files, the parametric system is created and is shown in Figure \ref{parametric_system_with_copy_actor}. 
+OpenShift. 
+After providing the input files, the parametric system is created. 
 
 The next step is to run the created parametric system. \texttt{run\_parametric\_system.py} runs the newly created parametric system. This system is being run 
 inside the Python interpreter provided by Optislang. These scripts are being called and ran in an orchestrated manner inside the class \texttt{ParametricSystem}.
 
-
-\subsection{Framework Orchestration}
+\subsection{Framework Orchestration} \label{parametric_system_code}
 For better code organization, reusability and encapsulation, the framework is built using classes. Classes are the pillar of object-oriented programming.
 There are many advantages of using classes.
 \begin{itemize}
@@ -95,7 +94,7 @@ standalone modules in Optislang.
   that the output meets the expected criteria.
   \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.8\textwidth]{Images/verify_output_file.pdf}
+    \includegraphics[width=0.7\textwidth]{Images/verify_output_file.pdf}
     \caption{Working of \texttt{verify\_output\_files()} function}
     \label{verify_output_files}
   \end{figure}
@@ -105,5 +104,7 @@ standalone modules in Optislang.
   \texttt{csv} files to verify column names and data types. If all checks pass, a success message is displayed; otherwise, an error message specifies the issue.
 
   For non-\texttt{csv} files, the function also verifies the presence and correctness of \texttt{.txt} and \texttt{.png} files. For \texttt{.txt} files, it 
-  additionally checks if the file is not empty.
+  additionally checks if the file is not empty. Figure \ref{verify_output_files} shows the working of \texttt{verify\_output\_files()} function.
 \end{itemize}
+
+%! Is a section of implementation of FastAPI required?

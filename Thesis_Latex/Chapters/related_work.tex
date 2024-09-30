@@ -1,0 +1,47 @@
+\chapter{Related Work}
+\section{\acrlong{ci} in Software Development}
+\acrfull{ci} is a software development practice that integrates code changes frequently and tests them automatically to detect issues early in the development 
+process. The concept of \acrshort{ci} was popularized by Martin Fowler in the early 2000s, emphasizing the importance of automating the build and test 
+process to ensure code stability\cite{fowler2006continuous} . Jenkins\footnote{\url{https://www.jenkins.io/}} and Travis CI\footnote{\url{https://www.travis-ci.com}} 
+are two of the most widely adopted CI tools that automate build processes and testing in a wide range of programming environments. These tools have laid the 
+groundwork for integrating code quality checks, reducing effort of manual testing.
+
+More recently, GitHub Actions\cite{github_actions} has gained popularity as a \acrshort{ci} tool integrated directly within GitHub repositories, enabling developers to automate 
+workflows triggered by events like code pushes or pull requests. Similar to these approaches, the framework developed in this thesis leverages GitHub Actions 
+to automate testing of OptiSlang modules, ensuring real-time feedback to developers\cite{8444829}.
+
+\section{Automation in Simulation based Optimization Workflows}
+Automation of simulation-based optimization workflows has a significant focus in engineering domains. Industries like automotive, aerospace, and manufacturing
+rely heavily on simulation tools like MATLAB and Ansys to optimize designs. These tools are often integrated with optimization algorithms to automate the 
+design process. The optimization algorithms are used to find the best design parameters that satisfy the design constraints and objectives. An article by
+Bucher et al.\cite{non_linear_optimization} discusses the use of Optislang for optimization of a non-linear system. In this study, the authors use design of 
+experiments to generate a response surface model and later optimize the model using a non-linear optimization algorithm. But the study does not discuss 
+the testing phase nor the automation of the workflow, which this thesis aims to address by automating the creation and testing of Optislang modules.
+
+Piero Pezze et al.\cite{sbpipe} have developed a pipeline for SBpipe\footnote{\url{https://sbpipe.readthedocs.io/en/latest/}}, a software tool for automating repetitive tasks in model development and analysis. By using
+this pipeline, productivity and reliability during model development are increased. A case study by \cite{6200132} introduced an approach to automate unit testing 
+in SCADA\footnote{\url{https://scada-international.com}} software. The study shows that by implementing automated testing framework, time was saved and the 
+quality of the software was improved. \cite{6465286}, \cite{553698} and \cite{6319254} have also discussed the importance of automated testing framework in  
+their respective studies and their advantages in improving software quality. This thesis aims to extend these ideas by proposing a Python based framework for 
+automated creating and testing of Optislang modules. By doing so, the framework will address the issues like modularization, automation and scalability in 
+simulation-based optimization workflows.
+
+\section{\acrlong{ci} for Optimization tools}
+Optislang is a software tool developed by Dynardo GmbH which is widely used in the industry for optimization, robustness analysis and many more. It also allows
+integration with other simulation tools like MATLAB, Ansys, etc. to automate parametric studies and optimization workflows. However, few works have been done 
+to automate the testing of Optislang modules.
+
+An article by Mathworks \cite{mathworks} shows importance of using version control and automated testing for simulations. Another article by dSPACE \cite{dspace}
+highlights the advantages of using \acrshort{ci} for Hardware-in-the-loop (HIL) simulations. These studies emphasize the implementation of DevOps practices 
+like version control, automated testing and \acrshort{ci} in simulation-based workflows and the benefits of using these practices\cite{windriver}. 
+
+A similar approach is proposed in this thesis to automate the creation and testing  modules in a \acrshort{ci} pipeline.
+
+\section{Challenges and Advancements in Workflow Automation}
+Automation in \acrshort{ci} pipelines, especially in simulation-based optimization workflows, poses several challenges. These include handling of input and parameters
+for simulations, managing dependencies across modules and providing real-time feedback to the developers. Many of the studies discussed above have addressed 
+these challenges in a general DevOps concept, yet there is a limited focus on simulation specific tools like Optislang.
+
+The framework developed in this thesis aims to address these challenges by providing a modular approach to create and test Optislang modules. The framework 
+provides a way to automate the creation of Optislang modules and test them using GitHub Actions. The framework also provides a way to verify the generated 
+files by the pipeline. This feature ensures that the generated files are correct and can be used for further analysis. 

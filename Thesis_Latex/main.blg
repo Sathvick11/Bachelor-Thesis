@@ -11,46 +11,57 @@ Repeated entry---line 157 of file Chapters/references.bib
 I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in devops_lifecycle
 Warning--to sort, need author or key in optislang
+Warning--to sort, need author or key in github_actions
+Warning--to sort, need author or key in dspace
+Warning--to sort, need author or key in windriver
 Warning--to sort, need author or key in framework
-You've used 10 entries,
+Warning--to sort, need author or key in openshift
+Warning--to sort, need author or key in docker
+Warning--to sort, need author or key in fastapi
+Warning--empty author in dspace
+Warning--empty author in windriver
+Warning--can't use both author and editor fields in Benson2009
+Warning--empty journal in non_linear_optimization
+Warning--empty year in non_linear_optimization
+You've used 26 entries,
             2118 wiz_defined-function locations,
-            554 strings with 5774 characters,
-and the built_in function-call counts, 3417 in all, are:
-= -- 321
-> -- 133
-< -- 6
-+ -- 54
-- -- 44
-* -- 224
-:= -- 507
-add.period$ -- 30
-call.type$ -- 10
-change.case$ -- 52
+            630 strings with 8222 characters,
+and the built_in function-call counts, 8100 in all, are:
+= -- 769
+> -- 308
+< -- 11
++ -- 128
+- -- 100
+* -- 511
+:= -- 1197
+add.period$ -- 74
+call.type$ -- 26
+change.case$ -- 127
 chr.to.int$ -- 0
-cite$ -- 13
-duplicate$ -- 146
-empty$ -- 311
-format.name$ -- 44
-if$ -- 773
+cite$ -- 40
+duplicate$ -- 352
+empty$ -- 736
+format.name$ -- 100
+if$ -- 1821
 int.to.chr$ -- 0
-int.to.str$ -- 10
-missing$ -- 7
-newline$ -- 53
-num.names$ -- 14
-pop$ -- 83
+int.to.str$ -- 26
+missing$ -- 19
+newline$ -- 129
+num.names$ -- 34
+pop$ -- 209
 preamble$ -- 1
-purify$ -- 42
+purify$ -- 102
 quote$ -- 0
-skip$ -- 112
+skip$ -- 277
 stack$ -- 0
-substring$ -- 184
-swap$ -- 49
-text.length$ -- 6
+substring$ -- 418
+swap$ -- 110
+text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 40
-warning$ -- 3
-while$ -- 26
-width$ -- 12
-write$ -- 107
+type$ -- 102
+warning$ -- 14
+while$ -- 58
+width$ -- 28
+write$ -- 262
 (There was 1 error message)

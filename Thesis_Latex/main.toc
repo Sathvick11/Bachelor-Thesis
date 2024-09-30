@@ -5,58 +5,58 @@
 \contentsline {section}{\numberline {1.1}Overview}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Objective}{1}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Outline}{1}{section.1.3}%
-\contentsline {chapter}{\numberline {2}\acrlong {moo}}{2}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Introduction}{2}{section.2.1}%
-\contentsline {paragraph}{Example:}{2}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Difference between \acrshort {moo} and \acrshort {soo}}{3}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Optislang}{3}{section.2.3}%
-\contentsline {paragraph}{}{3}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Modules and Workflows}{4}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Modules}{4}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Workflows}{5}{subsection.2.4.2}%
-\contentsline {section}{\numberline {2.5}Current Problem}{5}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Practical Application of the Thesis}{6}{chapter.3}%
-\contentsline {section}{\numberline {3.1}DevOps}{6}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Introduction}{6}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}DevOps Lifecycle}{7}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}\acrlong {ci}}{8}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Version Control Strategies}{9}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}GitHub Flow}{9}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Git Flow}{10}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Code Quality}{11}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Creation of Framework}{12}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduction}{12}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}What is a Framework?}{12}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Why is a Framework used?}{12}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Libraries vs Frameworks}{13}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Overview of the Framework}{13}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Directory Structure}{15}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Testing of Framework}{17}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Execution of Framework}{18}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Retrieve input files for Framework}{19}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Motivation}{19}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}Docker}{19}{subsection.4.6.2}%
-\contentsline {subsection}{\numberline {4.6.3}OpenShift}{20}{subsection.4.6.3}%
-\contentsline {subsection}{\numberline {4.6.4}Fast\acrshort {api}}{20}{subsection.4.6.4}%
-\contentsline {subsubsection}{What is \acrshort {api}?}{20}{subsection.4.6.4}%
-\contentsline {subsubsection}{Fast\acrshort {api}}{21}{figure.4.4}%
-\contentsline {subsection}{\numberline {4.6.5}Implementation}{21}{subsection.4.6.5}%
-\contentsline {chapter}{\numberline {5}Implementation of CI Pipeline}{24}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction}{24}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Version Control Strategy}{24}{section.5.2}%
-\contentsline {section}{\numberline {5.3}GitHub Actions}{25}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Components of GitHub Actions}{26}{subsection.5.3.1}%
-\contentsline {subsubsection}{Workflows}{26}{subsection.5.3.1}%
-\contentsline {subsubsection}{Events}{26}{lstnumber.5.1.27}%
-\contentsline {subsubsection}{Jobs}{27}{lstnumber.5.1.27}%
-\contentsline {subsubsection}{Actions}{27}{lstnumber.5.1.27}%
-\contentsline {subsubsection}{Runners}{27}{lstnumber.5.1.27}%
-\contentsline {section}{\numberline {5.4}Summary}{27}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Summary}{28}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Conclusion}{28}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Future Work}{28}{section.6.2}%
-\contentsline {chapter}{\numberline {A}Appendix}{29}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Implementation of the Framework}{29}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Utility files}{29}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}Creation and Execution of Parametric System}{30}{subsection.A.1.2}%
-\contentsline {subsection}{\numberline {A.1.3}Framework Orchestration}{30}{subsection.A.1.3}%
+\contentsline {chapter}{\numberline {2}Background}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{3}{section.2.1}%
+\contentsline {paragraph}{Example:}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Difference between \acrlong {moo} and \acrlong {soo}}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Softwares used for \acrlong {moo}}{4}{section.2.3}%
+\contentsline {paragraph}{}{4}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Modules and Workflows}{5}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Modules}{5}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Workflows}{6}{subsection.2.4.2}%
+\contentsline {section}{\numberline {2.5}Current Problems}{6}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Related Work}{8}{chapter.3}%
+\contentsline {section}{\numberline {3.1}\acrlong {ci} in Software Development}{8}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Automation in Simulation based Optimization Workflows}{8}{section.3.2}%
+\contentsline {section}{\numberline {3.3}\acrlong {ci} for Optimization tools}{9}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Challenges and Advancements in Workflow Automation}{9}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Methods used for \acrshort {ci} Framework}{10}{chapter.4}%
+\contentsline {section}{\numberline {4.1}DevOps}{10}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Introduction}{10}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}DevOps Lifecycle}{11}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}\acrlong {ci}}{12}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Version Control Strategies}{13}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}GitHub Flow}{13}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Git Flow}{14}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Code Quality}{15}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Frameworks}{16}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}What is a Framework?}{16}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Why is a Framework used?}{16}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Libraries vs Frameworks}{16}{subsection.4.5.3}%
+\contentsline {subsubsection}{Libraries:}{17}{subsection.4.5.3}%
+\contentsline {subsubsection}{Frameworks:}{17}{subsection.4.5.3}%
+\contentsline {chapter}{\numberline {5}Creation of Framework}{18}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Concept of \acrshort {ci} Framework}{18}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Directory Structure}{21}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Testing of \acrshort {ci} Framework}{22}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Execution of \acrshort {ci} Framework}{23}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Tools used in the \acrshort {ci} Framework}{23}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Implementation of CI Pipeline}{28}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Version Control Strategy}{28}{section.6.1}%
+\contentsline {section}{\numberline {6.2}GitHub Actions}{29}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Components of GitHub Actions}{30}{subsection.6.2.1}%
+\contentsline {subsubsection}{Workflows}{30}{subsection.6.2.1}%
+\contentsline {subsubsection}{Events}{30}{lstnumber.6.1.27}%
+\contentsline {subsubsection}{Jobs}{31}{lstnumber.6.1.27}%
+\contentsline {subsubsection}{Actions}{31}{lstnumber.6.1.27}%
+\contentsline {subsubsection}{Runners}{31}{lstnumber.6.1.27}%
+\contentsline {section}{\numberline {6.3}Summary}{31}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Results}{32}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Summary}{36}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Conclusion}{36}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Future Work}{36}{section.8.2}%
+\contentsline {chapter}{\numberline {A}Appendix}{38}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Implementation of the Framework}{38}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Utility files}{38}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Creation and Execution of Parametric System}{39}{subsection.A.1.2}%
+\contentsline {subsection}{\numberline {A.1.3}Framework Orchestration}{39}{subsection.A.1.3}%

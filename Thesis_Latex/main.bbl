@@ -1,19 +1,48 @@
 \begin{thebibliography}{10}
 
 \bibitem{optislang}
-Ansys optislang.
+{Ansys Optislang}.
 \newblock \url{https://www.ansys.com/products/connect/ansys-optislang}.
 \newblock Online; Accessed on 10/05/2024.
 
 \bibitem{devops_lifecycle}
-Devops - the complete guide for 2023.
+{DevOps} - the complete guide for 2023.
 \newblock \url{https://www.openxcell.com/devops}.
 \newblock Online; Accessed on 15/08/2024.
 
+\bibitem{docker}
+Docker.
+\newblock \url{https://www.docker.com/}.
+\newblock Online; Accessed on 15/09/2024.
+
+\bibitem{fastapi}
+{FastAPI}.
+\newblock \url{https://fastapi.tiangolo.com/}.
+\newblock Online; Accessed on 20/09/2024.
+
+\bibitem{github_actions}
+{GitHub Actions}.
+\newblock \url{https://docs.github.com/en/actions}.
+\newblock Online; Accessed on 25/09/2024.
+
+\bibitem{openshift}
+{Red Hat OpenShift}.
+\newblock
+  \url{https://www.redhat.com/en/technologies/cloud-computing/openshift}.
+\newblock Online; Accessed on 15/09/2024.
+
 \bibitem{framework}
-What is a framework?
+{What is a Framework?}
 \newblock \url{https://www.geeksforgeeks.org/what-is-a-framework/}.
 \newblock Online; Accessed on 13/09/2024.
+
+\bibitem{dspace}
+{Successfully Applying Continuous Integration for HIL Simulation}.
+\newblock {\em dSPACE}, June 2021.
+
+\bibitem{windriver}
+{Accelerate DevOps with Continuous Integration and Simulation}.
+\newblock {\em Windriver}, May 2022.
 
 \bibitem{8421965}
 S.A.I.B.S. Arachchi and Indika Perera.
@@ -28,12 +57,49 @@ Dimitrios Athanasiou, Ariadi Nugroho, Joost Visser, and Andy Zaidman.
 \newblock {\em IEEE Transactions on Software Engineering}, 40(11):1100--1125,
   Nov 2014.
 
+\bibitem{Benson2009}
+Harold~P. Benson.
+\newblock {\em Multi-objective optimization: pareto optimal solutions,
+  propertiesMulti-objective Optimization: Pareto Optimal Solutions,
+  Properties}, pages 2478--2481.
+\newblock Springer US, Boston, MA, 2009.
+
+\bibitem{non_linear_optimization}
+Christian Bucher, Johannes Will, and Jörg Riedel.
+\newblock {Multidisciplinary non-linear optimization with Optimizing Structural
+  Language OptiSLang}.
+
+\bibitem{fowler2006continuous}
+Martin Fowler and Matthew Foemmel.
+\newblock {Continuous Integration}, 2006.
+
+\bibitem{6200132}
+Shahnewaz~Amin Jolly, Vahid Garousi, and Matt~M. Eskandar.
+\newblock Automated unit testing of a scada control software: An industrial
+  case study based on action research.
+\newblock In {\em 2012 IEEE Fifth International Conference on Software Testing,
+  Verification and Validation}, pages 400--409, April 2012.
+
+\bibitem{mathworks}
+Puneet Khetarpal, Marco Dragic, and Govind Malleichervu.
+\newblock {Accelerating Simulink Simulations in Continuous Integration
+  Workflows with Simulink Cache Files}.
+\newblock {\em MathWorks}, 2022.
+
 \bibitem{9463074}
 Timothy Kinsman, Mairieli Wessel, Marco~A. Gerosa, and Christoph Treude.
 \newblock How do software developers use github actions to automate their
   workflows?
 \newblock In {\em 2021 IEEE/ACM 18th International Conference on Mining
   Software Repositories (MSR)}, pages 420--431, May 2021.
+
+\bibitem{8444829}
+Enrique Larios~Vargas, Joseph Hejderup, Maria Kechagia, Magiel Bruntink, and
+  Georgios Gousios.
+\newblock Enabling real-time feedback in software engineering.
+\newblock In {\em 2018 IEEE/ACM 40th International Conference on Software
+  Engineering: New Ideas and Emerging Technologies Results (ICSE-NIER)}, pages
+  21--24, May 2018.
 
 \bibitem{6802994}
 Mathias Meyer.
@@ -59,5 +125,30 @@ Pulasthi Perera, Roshali Silva, and Indika Perera.
 \newblock Improve software quality through practicing devops.
 \newblock In {\em 2017 Seventeenth International Conference on Advances in ICT
   for Emerging Regions (ICTer)}, pages 1--6, Sep. 2017.
+
+\bibitem{6465286}
+L.~Felipe Perrone, Christopher~S. Main, and Bryan~C. Ward.
+\newblock Safe: Simulation automation framework for experiments.
+\newblock In {\em Proceedings of the 2012 Winter Simulation Conference (WSC)},
+  pages 1--12, Dec 2012.
+
+\bibitem{sbpipe}
+Piero Pezze and Nicolas Gambardella.
+\newblock Sbpipe: A collection of pipelines for automating repetitive
+  simulation and analysis tasks.
+\newblock {\em BMC Systems Biology}, 11, 12 2017.
+
+\bibitem{553698}
+P.~Stocks and D.~Carrington.
+\newblock A framework for specification-based testing.
+\newblock {\em IEEE Transactions on Software Engineering}, 22(11):777--793, Nov
+  1996.
+
+\bibitem{6319254}
+Tanja~E.J. Vos, Beatriz Marín, Maria~Jose Escalona, and Alessandro Marchetto.
+\newblock A methodological framework for evaluating software testing techniques
+  and tools.
+\newblock In {\em 2012 12th International Conference on Quality Software},
+  pages 230--239, Aug 2012.
 
 \end{thebibliography}

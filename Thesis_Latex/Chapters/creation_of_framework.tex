@@ -4,51 +4,8 @@
 %Explain creation of retrieving the input files using FAST API and OpenShift
 %Explain storing of the framework in GitHub
 %In this chapter, we will discuss the creation of the framework, steps involved and the implementation of it.
-\section{Introduction}
-\subsection{What is a Framework?}
-A framework is a pre-built structure that provides a foundation for developing applications \cite{framework}. It includes libraries, tools, and best practices that accelerate 
-the development process. Frameworks serve as templates that can be customized to meet project requirements. They allow developers to work on the core, i.e,
-the application of logic, rather than worrying about the underlying structure. Many frameworks are open-source and are easily available. Developers can also
-contribute to the framework by adding new features or fixing bugs.
 
-It is crucial to first understand the project requirements and determine which programming language and corresponding framework best suit those needs. 
-Each framework is designed for a specific purpose and offers unique features. Having a fundamental understanding of the chosen programming language is 
-essential for effectively working with the framework. Popular frameworks used today include Django, Flask, Angular, React, PyTorch, TensorFlow, and more. 
-These frameworks empower developers to create robust and feature-rich applications.
-
-\subsection{Why is a Framework used?}
-Developing code from scratch can be a tedious and error-prone task. Clean, well-tested, and bug-free code is essential, but achieving this can be challenging.
-Additionally, developers must adhere to coding standards and best practices to ensure code quality. Therefore, using frameworks that meet the requirements is
-a better choice. Frameworks simplify the development process, reduce errors and provide a general template that can be customized as needed. They also make it
-easier for others to understand your code, as they are likely familiar with the frameworks used. Frameworks offer several advantages, including:
-\begin{itemize}
-    \item Simplified testing and debugging of code.
-    \item Clean and understandable code.
-    \item Reduced code redundancy within the project.
-    \item Decreased project time and cost.
-    \item Modifiable and extendable features and functionalities provided by the framework.
-\end{itemize}
-
-\subsection{Libraries vs Frameworks}It is a common misconception that libraries and frameworks are the same. But they serve different purposes and have distinct characteristics. \newline \newline
-\textbf{Libraries}:
-\begin{itemize}
-    \item A library is a collection of pre-written code that developers can use to optimize tasks.
-    \item It provides specific functionality that can be called upon when needed.
-    \item Developers have control over the flow of the application and decide when to use the library.
-    \item Some of the popular libraries include NumPy, Pandas, Matplotlib, and more.\newline
-\end{itemize}
-
-
-\textbf{Frameworks}:
-\begin{itemize}
-    \item A framework is a pre-built structure that provides a foundation for developing applications.
-    \item It dictates the architecture and flow of the application.
-    \item Developers must adhere to the structure and guidelines set by the framework.
-    \item Examples of popular frameworks include Django, Flask, Angular, React, and more. \newline
-\end{itemize}
-
-\section{Overview of the Framework}
-
+\section{Concept of \acrshort{ci} Framework}
 Before, building a framework, it is essential to understand the requirements and objectives of the project. The main objective of this framework is to 
 automate the process of running parametric simulations in Optislang, standardize and to verify the output files generated. The framework should be user-friendly,
 easy to use, and provide detailed error logs in case of any issues.
@@ -96,19 +53,17 @@ and other built-in Python modules. Figure \ref{flowchart} provides an overview o
     \label{flowchart}
 \end{figure}
 
-
 Let us understand the working of the framework in detail. The framework is mainly built using Python and uses Optislang's Python API to create and run the 
-parametric simulations. The primary requirement for the framework to run is to have module present. Therefore, the first step is to clone the required module
-from the specific repository and branch from GitHub. These serve us as the main arguments needed to run the framework. After cloning, the framework checks for 
+parametric simulations. The primary requirement for the framework to run is to have the module present. Therefore, the first step is to clone the required module
+from the specific repository and branch from GitHub. These serve as the main arguments needed to run the framework. After cloning the module, the framework checks for 
 \texttt{module\_config.json} and \texttt{parameters.json} files. These \acrshort{json} files are crucial to be present in the module as they contain the 
 information required to run the parametric simulations automatically. The \texttt{module\_config.json} file contains information of 
 the module like description of the module, name of the main script containing the algorithm, type of framework, input and output files and their properties.These data are important 
 to create, run and verify the parametric system generated. The \texttt{parameters.json} file contains information about the parameters required to be set as input 
 in the parametric system.
-%# Display module_config.json and parameters.json?? Because it is very big and takes 1 and half page. Can also include it in Appendix...
 
 At this stage, a decision is implemented. If the \acrshort{json} files are present, the framework proceeds to further steps. If the \acrshort{json} files are not found, the framework
-comes to a halt and displays an error message being shown to the user. Figure \ref{error_message} shows the implemetation of the error message. This function is present
+comes to a halt and displays an error message being shown to the user. Code snippet \ref{error_message} shows the implementation of the error message. This function is present
 inside the class \texttt{ParametricSystem}.
 \begin{figure}[!ht]
     \centering
@@ -143,17 +98,16 @@ These parameters are generated in the form of a \texttt{csv} file and a Python f
 The next step is to provide input files which are required by the parametric system in order to execute the simulations. These input files are retrieved from 
 a cloud storage using API calls. A more detailed explanation of this process is provided in Section \ref{retrieve_input_files}. 
 
-After the input files are retrieved, the framework then needs to create the parametric system. This should be achieved without the user's intervention, i.e, 
-automatically. At this stage, we will be using the Python interpreter provided by Optislang as it includes the necessary libraries and functions to create and run 
-the parametric system. Another terminal pops up which displays the progress of the execution of the system.
+After the input files are retrieved, the framework proceeds to create the parametric system. This is achieved without the user's intervention, i.e, 
+automatically. At this stage, the Python interpreter provided by Optislang is executed as it includes the necessary libraries and functions to create and run 
+the parametric system. Another terminal emerges, displaying the progress of the module creation.
 
 Since the whole process in the framework is automated, we need to ensure that the files generated by the parametric system are correct and are produced as 
 expected. This is done by the function \texttt{verify\_output\_files} present in the class \texttt{ParametricSystem}. 
 
-
+A high level overview of the framework is provided in Section \ref{implementation_framework} which provides the functions and classes used in it. 
 \section{Directory Structure} \label{directory_structure_section}
-Before discussing the implementation of the framework, let us first understand how the files are structured within the framework. The directory structure is 
-depicted in Figure \ref{directory_structure}. The framework consists of the following files and directories:
+The directory structure is depicted in Figure \ref{directory_structure}. The framework consists of the following files and directories:
 \begin{itemize}
     \item \textbf{\texttt{moo\_framework\_workflow.yaml}}:\newline
     This file contains the workflow for running the framework automatically. It is written in \acrshort{yaml} and is later used inside GitHub Actions.
@@ -171,7 +125,7 @@ depicted in Figure \ref{directory_structure}. The framework consists of the foll
     \item \textbf{\texttt{requirements.txt}}:\newline
     This file contains the list of libraries which helps in running the framework. It is important to install these libraries before running the framework.
 \end{itemize}
-\newpage %#####
+\newpage
 \begin{figure}[!ht]
   \centering
   \newcommand{\githubicon}{\includegraphics[height=0.4cm]{Logo/github-mark.pdf}}
@@ -225,14 +179,20 @@ depicted in Figure \ref{directory_structure}. The framework consists of the foll
   \label{directory_structure}
 \end{figure}
 
-\section{Testing of Framework}
+\section{Testing of \acrshort{ci} Framework}
 While building the framework, it is also essential to test the framework to ensure that it is working as expected. One way to do is to include breakpoints, add print 
 statements, and debug the code. However, this method is not efficient when the codebase is huge. Therefore, another way is to write unit cases for the framework.
 
 Unit testing is a software testing method that involves testing a small unit of code, typically a function or method. They are crucial part of the development 
 process as they help in identifying bugs and errors early in the development cycle. Python has two frameworks for unit testing, \texttt{unittest} and 
-\texttt{pytest}. I have implemented \texttt{unittest} for testing since it is part of the Python's standard library. Here, the unit tests can be found 
-in the \texttt{tests} directory. The file \texttt{tests.py} contains the test cases for the framework. Unit tests generally should cover the following aspects:
+\texttt{pytest}. In this thesis,\texttt{unittest} is used for testing since it is part of the Python's standard library. Here, the unit tests can be found 
+in the \texttt{tests} directory. The file \texttt{tests.py} contains the test cases for the framework. %Unit tests generally should cover the following aspects:
+%# Only mention what test are implemented and why
+Boundary tests, negative tests, and unit tests are implemented in the framework. Boundary tests are implemented to check the edge cases of the functions. Here, 
+a test function is implemented to verify whether the generated parameters for the system is empty or not. Negative tests are implemented to check if the function 
+handles incorrect input properly. To verify the data types generated in the output file, a test case is implemented. This test verifies if the data types in 
+the columns of the output file are generated correctly. 
+\begin{comment}
 \begin{itemize}
   \item \textbf{Unit tests}:\newline
   This is used to test the functionalities of each individual methods and functions.
@@ -244,8 +204,9 @@ in the \texttt{tests} directory. The file \texttt{tests.py} contains the test ca
   To check if the function handles incorrect input properly, negative tests are implemented. An example for this would be to handle if the argument is of a 
   different data type than expected. 
 \end{itemize}
+\end{comment}
 
-Figure \ref{unittest} shows an example of a unit test implemented in Python to test the existence of \acrshort{json} files. 
+Code snippet \ref{unittest} shows an example of a unit test implemented in Python to test the existence of \acrshort{json} files. 
 \renewcommand{\lstlistingname}{Code}
 \begin{lstlisting}[style=pythoncode, caption={Example of a unit test}, label={unittest}]
 class TestParametricSystem(unittest.TestCase):
@@ -266,63 +227,40 @@ class TestParametricSystem(unittest.TestCase):
         self.assertEqual(expected_path, actual_path)  
 \end{lstlisting}
 
-Firstly, we create a class \texttt{TestParametricSystem} which inherits from \texttt{unittest.TestCase}. To avoid initialization of the same variables in each
-test case, we take advantage of the \textbf{\texttt{setUp()}} method. Here, we create an object an initialize the arguments for the class \texttt{ParametricSystem}.
+First, a class \texttt{TestParametricSystem} is created, which inherits from \texttt{unittest.TestCase}. To avoid initialization of the same variables in each
+test case, \textbf{\texttt{setUp()}} method is used. Here, an object is created to initialize the arguments for the class \texttt{ParametricSystem}.
 The functions in the unit tests needs to start with the prefix \texttt{test}. This convention is used to identify the function which the test cases. For example, 
 in Figure \ref{unittest},the function \texttt{test\_get\_module\_config\_path} recognizes that it is a test case whereas the function \texttt{get\_module\_name}
-is a helper function and not a test case. In this example the function \texttt{test\_get\_module\_config\_path} is responsible to check if the path of the folder
-containing the \acrshort{json} file is correct. To ensure this, we use the function \texttt{assertEqual} which checks if the expected path is equal to the 
+is a helper function and not a test case. In this example, the function \texttt{test\_get\_module\_config\_path} is responsible to check if the path of the folder
+containing the \acrshort{json} file is correct or not. To ensure this, \texttt{assertEqual} is used, which checks if the expected path is equal to the 
 actual path. If the paths are equal, the test case passes, else it fails. \texttt{unittest} provides several other functions to test the code. 
 
-\section{Execution of Framework}
-To execute the framework, the user needs to run the file \texttt{main.py}. This file is the main file to run the framework. This script calls the functions
-from the class \texttt{ParametricSystem} and runs the module. Figure \ref{main_script} shows the execution of the framework.
-\renewcommand{\lstlistingname}{Code}
-\begin{lstlisting}[style=pythoncode, caption={Execution of framework using \texttt{main.py}}, label={main_script}]
-from src import ParametricSystem
+\section{Execution of \acrshort{ci} Framework}
+To execute the framework, the user needs to run the file \texttt{main.py}. This script calls the functions
+from the class \texttt{ParametricSystem} and runs the module.
 
-module_name = "MOO_M_ARRHENIUS"
-module_branch_name = 'MOO-1355_py_framework_poc'
 
-def main():
-    system = ParametricSystem(module_name, module_branch_name)
-    system.clone_module()
-    if (
-        system.get_module_config_path().exists() & system.get_parameters_path().exists()
-    ) == True:
-        system.run_module()
-        system.verify_output_file()
-
-    else:
-        system.json_files_log()
-
-if __name__ == "__main__":
-    main()
-\end{lstlisting}
-
-In code snippet \ref{main_script}, an example of cloning the module \texttt{MOO\_M\_ARRHENIUS} is shown. An instance of the class \texttt{ParametricSystem} 
+An instance of the class \texttt{ParametricSystem} 
 is created with the arguments \texttt{module\_name} and \texttt{module\_branch\_name}. Then, the check for the \texttt{\acrshort{json}} files is done. 
 The verifying of the files is done outside the function \texttt{run\_module()} as we do need to verify the existence of the files before running the module.
 Once the existence of the files are verified, the module is being run and after the successful execution in Optislang, it displays the status of the output
 files. 
 
 This framework also contains some external libraries which are required for the functioning of the framework. Therefore, \texttt{requirements.txt} file contains the list of libraries
-required to install before running the framework in the virtual machine.
+required to install before running the framework in the virtual machine. Execution of the framework is provided in detail with an example in Chapter \ref{results}.
 
-
-\section{Retrieve input files for Framework} \label{retrieve_input_files}
-\subsection{Motivation}
-Initially, the idea was to mock the input files required for the parametric system. The data required for mocking the input files were present in the 
-\texttt{module\_config.json}. But, in some modules. the input files were very complex. For example, in the module \texttt{ROM SOLVER}, there are input files which are 
-matrix files which have 250,000 lines of data. Mocking these huge files is time consuming, inefficient and not a way to standardize the framework. Therefore,
+\section{Tools used in the \acrshort{ci} Framework} \label{retrieve_input_files}
+Input files which are required by the module can be mocked using the data in \texttt{module\_config.json}. But, in some modules, the input files required are very complex. For example, the module, \texttt{ROM SOLVER}, needs input files in the form of 
+matrices, containing 250,000 lines of data. Mocking these huge files is time consuming, inefficient and not a way to standardize the framework. Therefore,
 the idea was to save these files in a cloud storage and retrieve them later when required. This improves the efficiency of the framework and also helps in
 standardizing it. 
 
-In the following section, we will discuss the practices, tools and implementation to retrieve the input files from OpenShift using FastAPI.
-\subsection{Docker}
-Docker is platform used for developing, shipping and running applications effectively. It is a containerization platform which packages the application and 
-all its dependencies together in the form of containers. To run Docker in a local machine or in a cloud, we need to install it. Docker is preferred during
-development and deployment as it is lightweight, portable and scalable. This can run anywhere, regardless of the operating system.
+To store the input files, OpenShift is used. OpenShift\cite{openshift} is a Kubernetes platform which helps in deploying, scaling and managing containerized applications. 
+OpenShift is used in this thesis as it is easy to build, deploy and maintain in the cloud. The application in OpenShift needs to be containerized and deployed. 
+
+Docker\cite{docker} is a platform for developing, shipping and running applications effectively. It is a containerization platform which packages the application and all 
+its dependencies together in the form of containers. Docker is preferred for development and deployment as it is lightweight, portable and scalable. This can 
+run anywhere, regardless of the operating system. 
 \begin{figure}[!ht]
   \centering
   \tikzstyle{image} = [minimum width=3cm, minimum height=1cm, text centered, text width = 2cm]
@@ -338,27 +276,14 @@ development and deployment as it is lightweight, portable and scalable. This can
   \caption{Creation and deployment of Docker image}
   \label{docker_image_creation}
 \end{figure}
-A Dockerfile contains instructions to build a Docker image. It is basically a blueprint to built the Docker image. A Docker image is a lightweight, standalone, 
-executable package that includes everything needed to run the application. WHen the image is run, it becomes a container. Figure \ref{docker_image_creation}
-shows the creation and deployment of a Docker image. 
 
-The main difference between a docker container and a virtual machine is that a container shares the host's kernel which makes it more lightweight and faster.
-Whereas, a virtual machine reserves some place in the host's memory for the guest operating system, libraries and applications which makes it slower and heavier.
+To build an image in Docker, a Dockerfile is required. The Dockerfile contains the instructions to build the Docker image. Figure \ref{docker_image_creation} 
+shows the creation of a container. This container contains input files required for modules to run the parametric system in Optislang. 
 
-\subsection{OpenShift}
-%# Intro to OpenShift
-OpenShift is a Kubernetes platform which is used to deploy and manage containerized applications. It allows developers to build, deploy and scale applications
-on the cloud. OpenShift is preferred as it is an effective and flexible platform for container orchestration and deployment of applications. The advantage of 
-using OpenShift is that it provides a web console and a command line interface to manage the applications. It also provides key metrics and logs for monitoring
-CPU, memory, bandwidth usage, latency of network, container health and many more.
-%# Explain the creation of a pod
-\subsection{Fast\acrshort{api}}
-%# What is API
-\subsubsection{What is \acrshort{api}?}
-\acrshort{api} is a collection of protocols and tools which allows different software applications to communicate with each other. Let us consider an scenario
-to understand the concept of \acrshort{api}. Suppose, you are in a restaurant and you want to order food. You call the waiter and tell him the food you want 
-to order. The waiter takes the order to the kitchen, gives it to the chef and the chef prepares the food. Once the food is ready, the waiter brings the food
-to you.
+But, the input files are not directly accessible from the container. To transfer the files, a communication medium is required. This is achieved by using 
+\acrshort{api} calls. \acrshort{api} is a collection of protocols and tools which allows different software applications to communicate with each other.
+Figure \ref{api_working} shows the working of an \acrshort{api}. 
+\newpage
 \begin{figure}[!ht]
   \centering
   \tikzstyle{image} = [minimum width=3cm, minimum height=1cm, text centered, text width = 2cm]
@@ -389,17 +314,164 @@ to you.
   \label{api_working}
 \end{figure}
 
-Similar to the example, an \acrshort{api} takes the request from the client, processes it and sends the response to the server. The server processes the request
-and sends the required response back to the client. To retrieve the required data from the server, the client needs to send the request to the server via the
-required \acrshort{api} endpoint.
+An \acrshort{api} takes the request from the client, processes it and sends the response to the server. The server processes the request and sends the required 
+information back to the client. This thesis leverages the use of \acrshort{api} to request for input files from the cloud storage. To build the \acrshort{api},
+Fast\acrshort{api} is used. Fast\acrshort{api}\cite{fastapi} is a modern, fast (high-performance), web framework for building \acrshort{api} with Python. Fast\acrshort{api} 
+is preferred as it is easy to use, fast to develop, high performance and easy to deploy. To secure the \acrshort{api} calls and to access the input files, a basic \acrshort{http}  
+authentication is implemented in this thesis. Figure \ref{directory_structure_input_files} shows the file structure of the input files storage.
+\newpage
+\begin{figure}[!ht]
+  \centering
+  \newcommand{\githubicon}{\includegraphics[height=0.4cm]{Logo/github-mark.pdf}}
+  \newcommand{\foldericon}{\includegraphics[height=0.4cm]{Logo/folder_icon.pdf}}
+  \newcommand{\pythonicon}{\includegraphics[height=0.5cm]{Logo/python-logo-only.pdf}}
+  \newcommand{\txticon}{\includegraphics[height=0.5cm]{Logo/txt-svgrepo-com.pdf}}
+  \newcommand{\dockericon}{\includegraphics[height=0.5cm]{Images/docker.pdf}}
+  \newcommand{\envicon}{\includegraphics[height=0.5cm]{Logo/settings-svgrepo-com.pdf}}
 
-To communicate to the server, \acrshort{api} uses \acrshort{http} methods like \texttt{GET}, \texttt{POST}, \texttt{PUT}, \texttt{DELETE} etc. The \texttt{GET}
-method is used to retrieve data from the server, \texttt{POST} is used to send data to the server, \texttt{PUT} is used to update the data and \texttt{DELETE}
-is used to delete the data from the server.
-%# See if you can get more about it
-\subsubsection{Fast\acrshort{api}}
-Fast\acrshort{api} is a modern, fast web framework which is relatively fast and used for building \acrshort{api}s using Python. 
-%# How to use Fast API
+  \begin{forest}
+    for tree={
+      font=\ttfamily,
+      grow'=0,
+      child anchor=west,
+      parent anchor=south,
+      anchor=west,
+      calign=first,
+      edge path={
+        \noexpand\path [draw, \forestoption{edge}]
+        (!u.south west) +(7.5pt,0) |- node[fill,inner sep=1.25pt] {} (.child anchor)\forestoption{edge label};
+      },
+      before typesetting nodes={
+        if n=1
+          {insert before={[,phantom]}}
+          {}
+      },
+      fit=band,
+      before computing xy={l=15pt},
+    }
+  [Input Files Storage, label={right:\foldericon}
+    [src, label={right:\foldericon}
+      [routers, label={right:\foldericon}
+        [\_\_init\_\_.py, label={right:\pythonicon}]
+        [files.py, label={right:\pythonicon}]
+      ]
+      [file.py, label={right:\pythonicon}]
+      [security.py, label={right:\pythonicon}]
+    ]
+    [static-files
+      [arrhenius, label={right:\foldericon}]
+      [coffin\_manson, label={right:\foldericon}]
+      [pv\_calculator, label={right:\foldericon}]
+      [rainflow\_counting, label={right:\foldericon}]
+      [rom\_solver, label={right:\foldericon}]
+      [rom\_solver\_prepro, label={right:\foldericon}]
+    ]
+    [main.py, label={right:\pythonicon}]
+    [requirements.txt, label={right:\txticon}]
+    [Dockerfile, label={right:\dockericon}]
+    [.env, label={right:\envicon}]
+  ]
+  \end{forest} 
+  \caption{Directory structure of the input files storage}
+  \label{directory_structure_input_files}
+\end{figure}
+
+\texttt{src} contains the scripts needed to establish a connection with Fast\acrshort{api}. Fast\acrshort{api} contains two \texttt{GET} endpoints which helps in the retrieval of
+input files. Endpoint \texttt{getInputFiles} returns a dictionary containing the key-value pair of module name and the corresponding location of the input 
+files. The directory \texttt{static-files} contains the input files which is used to retrieve the input files. The endpoint \texttt{download} takes the location 
+of a file as an argument and returns the file to the user.
+
+To access the input files in a cloud storage, we build a docker image consisting of the Fast\acrshort{api} implementation and the input files. Code snippet 
+\ref{dockerfile} shows the creation of an image using Dockerfile. 
+\renewcommand{\lstlistingname}{Code}
+\begin{lstlisting}[language=Dockerfile ,caption={Implementation of Dockerfile}, label={dockerfile}]
+FROM python:3.10
+WORKDIR /code
+
+COPY ./requirements.txt /code/
+COPY ./static-files/ /code/static-files/
+
+RUN ["python", "-m", "pip", "install", "-r", "requirements.txt"]
+
+EXPOSE 7000
+
+RUN mkdir -p ./temp && \
+    chgrp -R 0 ./temp && \
+    chmod -R g=u ./temp
+
+COPY main.py /code/
+COPY ./src/ /code/src/
+COPY .env /code/.env
+ENTRYPOINT ["python", "-m", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "7000"]
+\end{lstlisting}
+
+The Dockerfile contains the instructions to build the Docker image. Here, the Dockerfile copies the folder containing the input files and Fast\acrshort{api}.
+It installs the required libraries using the \texttt{requirements.txt} file. Later, it exposes the port 7000 and runs the Fast\acrshort{api} using the
+uvicorn server in OpenShift. This is later used during the first step of executing the parametric system.
+
+The \texttt{.env} file contains the environment variables consisting of authentication details to access the \acrshort{api}. 
+\begin{comment}
+
+\subsection{Docker}
+Docker is platform used for developing, shipping and running applications effectively. It is a containerization platform which packages the application and 
+all its dependencies together in the form of containers. To run Docker in a local machine or in a cloud, we need to install it. Docker is preferred during
+development and deployment as it is lightweight, portable and scalable. This can run anywhere, regardless of the operating system.
+\begin{figure}[!ht]
+  \centering
+  \tikzstyle{image} = [minimum width=3cm, minimum height=1cm, text centered, text width = 2cm]
+  \tikzstyle{arrow} = [thick,->,>=stealth]
+  \begin{tikzpicture}[node distance=6cm]
+    \node (Dockerfile) [image] {\centering \includegraphics[width=2cm]{Images/docker.pdf}\newline Dockerfile};
+    \node (Dockerimage) [image, right of = Dockerfile] {\centering \includegraphics[width=2cm]{Images/docker_image.pdf} \newline Docker Image};
+    \node (Dockercontainer) [image, right of = Dockerimage] {\centering \includegraphics[width=2cm]{Images/container.pdf} \newline Docker Container};
+
+    \draw [arrow] (Dockerfile) -- node[anchor=south] {Build} (Dockerimage);
+    \draw [arrow] (Dockerimage) -- node[anchor=south] {Run} (Dockercontainer);
+  \end{tikzpicture}
+  \caption{Creation and deployment of Docker image}
+  \label{docker_image_creation}
+\end{figure}
+A Dockerfile contains instructions to build a Docker image. It is basically a blueprint to built the Docker image. A Docker image is a lightweight, standalone, 
+executable package that includes everything needed to run the application. WHen the image is run, it becomes a container. Figure \ref{docker_image_creation}
+shows the creation and deployment of a Docker image. 
+
+The main difference between a docker container and a virtual machine is that a container shares the host's kernel which makes it more lightweight and faster.
+Whereas, a virtual machine reserves some place in the host's memory for the guest operating system, libraries and applications which makes it slower and heavier.
+
+\subsection{OpenShift}
+%# Intro to OpenShift
+
+
+\begin{figure}[!ht]
+  \centering
+  \tikzstyle{image} = [minimum width=3cm, minimum height=1cm, text centered, text width = 2cm]
+  \tikzstyle{arrow} = [thick,->,>=stealth]
+  \begin{tikzpicture}[node distance=7cm]
+    \node (client) [image] {\centering \includegraphics[width=2.5cm]{Images/computer-coding.pdf} \newline Client};
+    \node (api)  [image, right of = client] {\centering \includegraphics[width=2.5cm]{Images/api.pdf} \newline API};
+    \node (server) [image, right of = api] {\centering \includegraphics[width=2.5cm]{Images/database.pdf} \newline Server};
+
+    \path (client.east) -- (client.north east) coordinate[pos=0.2] (client1);
+    \path (api.west) -- (api.north west) coordinate[pos=0.2] (api1);
+    \draw[latex-] (client1) -- (api1) node[midway, above] {Response};
+
+    \path (api.east) -- (api.north east) coordinate[pos=0.2] (api2);
+    \path (server.west) -- (server.north west) coordinate[pos=0.2] (server1);
+    \draw[latex-] (api2) -- (server1);
+
+    % Response Arrow coordinates (Server -> API -> Client) on the bottom
+    \path (server.west) -- (server.south west) coordinate[pos=0.1] (server2);
+    \path (api.east) -- (api.south east) coordinate[pos=0.1] (api3);
+    \draw[latex-] (server2) -- (api3);
+
+    \path (api.west) -- (api.south west) coordinate[pos=0.1] (api4);
+    \path (client.east) -- (client.south east) coordinate[pos=0.1] (client2);
+    \draw[latex-] (api4) -- (client2) node[midway, below] {Request};
+  \end{tikzpicture}
+  \caption{Working of an \acrshort{api}}
+  \label{api_working}
+\end{figure}
+
 
 \subsection{Implementation}
 %# Explain the implementation of retrieving input files using Fast API and OpenShift
@@ -499,6 +571,7 @@ uvicorn server. The \texttt{.env} file contains the environment variables consis
 
 After building the Docker image, it is deployed in a pod in OpenShift. Using OpenShift, we can access the input files remotely via \acrshort{api} calls. This 
 is later called during the first step of creating the parametric system.
+\end{comment}
 
 %!\section{Summary}
 %# Create a flowchart explaining the final working of the framework using all the tools and practices
