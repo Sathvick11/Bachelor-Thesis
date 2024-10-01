@@ -9,7 +9,7 @@ is provided in the following sections.
 \paragraph{Example:}
 A car consists of many components like engine, body, wheels and many more which can be
 tweaked. In this example, the manufacturer wants to optimize the car for two objectives: lower manufacturing cost of the car and lower carbon emissions. With 
-considering the input parameters and the objectives, we get many solutions as shown in Figure \ref{moo}
+considering the input parameters and the objectives, many solution are obtained as shown in Figure \ref{moo}
 
 \begin{figure}[!h]
 	\begin{center}
@@ -28,7 +28,7 @@ Optimization problems, whether single-objective or multi-objective, have the sam
 to solving these problems is different. 
 
 In \acrfull{soo}, the goal is to optimize a single objective function, which can either be maximized or minimized. The  problem is simpler to define and solve
-because it involves only one objective. To calculate \acrshort{soo}, we can use methods like gradient descent, linear programming, etc.
+because it involves only one objective. To calculate \acrshort{soo}, methods like gradient descent, linear programming and many more are used.
 
 \begin{figure}[!h]
     \centering
@@ -37,12 +37,12 @@ because it involves only one objective. To calculate \acrshort{soo}, we can use 
     \label{soo}
 \end{figure}
 
-In Figure \ref{soo}, we have considered the same example given in Section \ref{what is moo}. But, here, we are considering only \textbf{one objective}, minimizing 
+In Figure \ref{soo}, the same example given in Section \ref{what is moo} is considered. But, here, the manufacturer considers only \textbf{one objective}, minimizing 
 the manufacturing cost. This is shown in the y-axis. The best solution is highlighted in orange.
 
 In \acrshort{moo}, the optimization involves two or more objective functions simultaneously. The problem is more complex because the objectives are often
-conflicting. Unlike \acrshort{soo}, where we have a single best solution, in \acrshort{moo}, we have pareto optimal solutions.
-To calculate \acrshort{moo}, we can use methods like pareto optimization, scalarization method, weighted sum method, $\epsilon$-constraint method, etc.
+conflicting. Unlike \acrshort{soo}, where a single best solution is obtained, in \acrshort{moo}, pareto optimal solutions are obtained.
+To calculate \acrshort{moo}, methods like pareto optimization, scalarization method, weighted sum method, $\epsilon$-constraint method, etc are used.
 
 
 While \acrshort{soo} focuses on finding the best solution according to a single criterion, \acrshort{moo} addresses the more complex task of balancing multiple, 
@@ -53,7 +53,7 @@ Understanding the differences between these approaches is crucial for selecting 
 \section{Softwares used for \acrlong{moo}}
 \paragraph{}
 
-To calculate \acrshort{moo}, we need a software platform that can handle the complexity of the problem. Ansys Optislang \cite{optislang} is one such software,  
+To calculate \acrshort{moo}, a software platform which can handle the complexity of the problem is required. Ansys Optislang \cite{optislang} is one such software,  
 which is used for design exploration, \acrfull{cae} based sensitivity analysis and optimization in conjunction with any product development tool. 
 It is a Process Integration and Design Optimization tool or in short, a \acrshort{pido} tool. Process Integration refers to automate and orchestrate manual 
 simulation processes and to realize complex workflows. Design Optimization aims for better understanding of your design, optimizing the product, identify an 
@@ -72,7 +72,7 @@ sensitivity analysis, robustness analysis, reliability analysis, and many more.
 \subsection{Modules}
 Modules are created by the system developers. Modules include a simulation model as a calculation with defined interfaces for coupling with other modules. 
 These modules are either defined in MATLAB or Python. Each module is designed to tackle a specific issue. To document and collaborate with other
-system developers, every module is versioned and stored in a specific manner in a repository in GitHub Enterprise. Figure \ref{github_arrhenius} shows us the 
+system developers, every module is versioned and stored in a specific manner in a repository in GitHub Enterprise. Figure \ref{github_arrhenius} shows the 
 structure of how each module is maintained in GitHub organization.
 
 %!Crop the image to it's normal size
@@ -107,7 +107,7 @@ In the above Figure \ref{workflow_example}, the workflow \texttt{INV\_PMoC\_RE} 
 reliability assessment and optimization for a Power Module on Cooler (PMoC). The workflow consists of several modules like \texttt{ARRHENIUS}, \texttt{ROM SOLVER},
 \texttt{PV CALCULATOR} and many more.
 \subsection*{}
-For workflows and modules, our department follows a quality assurance process called \textbf{Model Readiness Level (MRL)}. Higher the readiness level, higher
+For workflows and modules, the department follows a quality assurance process called \textbf{Model Readiness Level (MRL)}. Higher the readiness level, higher
 the maturity of the module or workflow. This quality assurance process ensures that the modules and workflows are not developed for a small development 
 circle, but for a broader audience. It also ensures that the modules and workflows are well documented, tested and maintained.
 
