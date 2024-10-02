@@ -24,7 +24,8 @@ to tackle the new features. While implementing the framework, I have used the Gi
 From the figure \ref{branching_strategy}, the \texttt{main} branch contains the stable code required for running the modules. Since, the framework needs to be
 tested and implemented for all the modules, develop branches are created from the \texttt{main} branch. Each of the develop branch contains the code for a 
 specific module. This is beneficial as the code for each module is isolated and the main source code is not affected. Once the code is tested and implemented, 
-the code is merged to the \texttt{main} branch. During any commit to the develop branch, the \acrshort{ci} pipeline is triggered which tests the framework.
+the code is merged to the \texttt{main} branch. During any commit to the develop branch, the \acrshort{ci} pipeline is triggered which builds and executes the 
+module.
 
 \section{GitHub Actions}
 %# What is it?
@@ -40,7 +41,7 @@ explains the software development lifecycle and the usage of \acrshort{ci}/\acrs
 \end{figure}
 
 GitHub Actions is implemented after step 2 in the figure \ref{github_actions_flowchart}. After updating the codebase, the developers pushes the code to the
-code to the repository which triggers the \acrshort{ci} pipeline. This pipeline executes a script which validates the developer's code. If any exception is 
+repository which triggers the \acrshort{ci} pipeline. This pipeline executes a script which validates the developer's code. If any exception is 
 raised, the pipeline fails, preventing the code from being merged and sends a notification to the developer. Otherwise, the build is successful and the code 
 is merged to the main branch.
 
@@ -106,7 +107,7 @@ The disadvantage of runners in GitHub Actions is that the runners can only run o
 workflow. 
 
 \section{Summary}
-The implementation of the \acrshort{ci} pipeline is a crucial step in the testing of modules using the framework. The pipeline is set to trigger on every push to
+The implementation of the \acrshort{ci} pipeline is a crucial step in testing the integration capabilities of modules using the framework. The pipeline is set to trigger on every push to
 a specific branch. On triggering, the pipeline gets the files from the repository, sets up the python environment, installs the dependencies and runs the 
 \texttt{main.py}, which calls the framework. If any exception is raised during steps, the pipeline fails and sends a notification to the developer. Otherwise,
 the pipeline is marked as successful and the code is merged to the branch.

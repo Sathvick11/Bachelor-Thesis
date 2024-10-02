@@ -6,7 +6,7 @@ In this section, we will briefly discuss the working and functioning of each of 
 for the proper functioning and execution of the framework. 
 
 \subsection{Utility files}
-During creation of a framework, it is common to repeat functionalities in different parts of the codebase. But, it is frowned upon in software development as 
+During creation of a framework, it is common to repeat functionalities in different parts of the codebase. But, it is considered a bad practice in software development as 
 it leads to code redundancy and makes the codebase difficult to maintain. Therefore, it is ideal to store the repeated functionalities in a separate file and
 import them when required. A utility file refers to a Python source file  which contains utility functions or helper functions. These functions are built in a 
 way that they can provide common functionalities or operate specific tasks which can be reused in different parts of the codebase. 
@@ -24,7 +24,7 @@ get column names of a \texttt{csv} file, get data type of a column in a \texttt{
 in the \texttt{utils.py} file.
 
 \subsection{Creation and Execution of Parametric System}
-Since the main objective of the framework is to automate the process of running parametric simulations in Optislang, it is essential to create the parametric 
+Since the main objective of the framework is to automate the integration of modules when running parametric simulations, it is essential to create the parametric 
 system automatically. The script \texttt{create\_parametric\_system.py} assists in creating the parametric system without the help of Optislang's GUI. The 
 parametric system is created based on the information present in \texttt{module\_config.json}. The \acrshort{json} file consists of key-value pairs containing 
 crucial information for creating the system, like name of the main script containing the algorithm, type of module to build, i.e, Python or MATLAB. 

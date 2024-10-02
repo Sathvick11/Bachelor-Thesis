@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.6)  30 SEP 2024 16:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.6)  1 OCT 2024 11:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1580,15 +1580,15 @@ Package pdftex.def Info: Images/thesis_branching_strategy.png  used on input lin
 <Images/github_actions_flowchart.pdf, id=747, 633.32607pt x 162.6075pt>
 File: Images/github_actions_flowchart.pdf Graphic file (type pdf)
 <use Images/github_actions_flowchart.pdf>
-Package pdftex.def Info: Images/github_actions_flowchart.pdf  used on input line 37.
+Package pdftex.def Info: Images/github_actions_flowchart.pdf  used on input line 38.
 (pdftex.def)             Requested size: 469.75502pt x 120.61052pt.
  [29 <./Images/thesis_branching_strategy.png> <./Images/github_actions_flowchart.pdf>]
 LaTeX Font Info:    Font shape `T1/FiraMono-TOsF/m/it' in size <9> not available
-(Font)              Font shape `T1/FiraMono-TOsF/regular/it' tried instead on input line 54.
+(Font)              Font shape `T1/FiraMono-TOsF/regular/it' tried instead on input line 55.
 LaTeX Font Info:    Font shape `T1/FiraMono-TOsF/regular/it' in size <9> not available
-(Font)              Font shape `T1/FiraMono-TOsF/regular/sl' tried instead on input line 54.
+(Font)              Font shape `T1/FiraMono-TOsF/regular/sl' tried instead on input line 55.
 LaTeX Font Info:    Font shape `T1/FiraMono-TOsF/regular/sl' will be
-(Font)              scaled to size 7.38007pt on input line 54.
+(Font)              scaled to size 7.38007pt on input line 55.
  [30]) (Chapters/results.tex [31]
 Chapter 7.
 (C:\Users\BIS4SI\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
@@ -1680,7 +1680,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  141i,19n,141p,2432b,3017s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraMono-Bold.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraMono-Oblique.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraMono-Regular.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/BIS4SI/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb>
-Output written on main.pdf (51 pages, 1138322 bytes).
+Output written on main.pdf (51 pages, 1138472 bytes).
 PDF statistics:
  1089 PDF objects out of 1200 (max. 8388607)
  297 named destinations out of 1000 (max. 500000)
